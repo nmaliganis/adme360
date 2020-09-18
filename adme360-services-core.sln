@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{FAE8B85B-7A38-49FE-BAC2-52A65BAAC5CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{17F082EB-F246-4B6D-B5C0-F25C37E591EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cms", "Cms", "{14E5ADE2-1753-4E19-9015-AEC6B8DB8C1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360-auth.api", "src\auth\adme360-auth.api\adme360-auth.api.csproj", "{4E16AE8D-F23A-4C91-AA16-E01833083185}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360-common.dtos", "src\common\adme360-common.dtos\adme360-common.dtos.csproj", "{B532FEAC-5E7B-431B-9AC0-26314B32E4B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360-common.infrastructure", "src\common\adme360-common.infrastructure\adme360-common.infrastructure.csproj", "{DEEFFF21-B6EA-4608-BE62-DAEC17D4570B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360-cms.model", "src\cms\adme360-cms.model\adme360-cms.model.csproj", "{587B05C0-6394-4A22-9727-F38EE5C876ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360-cms.contracts", "src\cms\adme360-cms.contracts\adme360-cms.contracts.csproj", "{8B3B2537-A65C-448A-86B9-49E0729B39A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360-cms.repository", "src\cms\adme360-cms.repository\adme360-cms.repository.csproj", "{1EC66AF6-8B97-4D25-ACBB-4013390BFDBD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360-cms.services", "src\cms\adme360-cms.services\adme360-cms.services.csproj", "{756B1869-21E3-423F-9CE7-ED1F881D798A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360-cms.api", "src\cms\adme360-cms.api\adme360-cms.api.csproj", "{52AE3CF8-1A8B-4A23-85C7-CC1660DB852D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUi", "WebUi", "{CBC3B9D5-04F6-4960-8C31-29CA7B948983}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "adme360.webui", "src\webui\server-side\adme360.webui.csproj", "{BB8A879A-F9E6-471B-9BAD-7D2B4919BE01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E16AE8D-F23A-4C91-AA16-E01833083185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E16AE8D-F23A-4C91-AA16-E01833083185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E16AE8D-F23A-4C91-AA16-E01833083185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E16AE8D-F23A-4C91-AA16-E01833083185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B532FEAC-5E7B-431B-9AC0-26314B32E4B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B532FEAC-5E7B-431B-9AC0-26314B32E4B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B532FEAC-5E7B-431B-9AC0-26314B32E4B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B532FEAC-5E7B-431B-9AC0-26314B32E4B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEEFFF21-B6EA-4608-BE62-DAEC17D4570B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEFFF21-B6EA-4608-BE62-DAEC17D4570B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEFFF21-B6EA-4608-BE62-DAEC17D4570B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEFFF21-B6EA-4608-BE62-DAEC17D4570B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{587B05C0-6394-4A22-9727-F38EE5C876ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587B05C0-6394-4A22-9727-F38EE5C876ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587B05C0-6394-4A22-9727-F38EE5C876ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587B05C0-6394-4A22-9727-F38EE5C876ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3B2537-A65C-448A-86B9-49E0729B39A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3B2537-A65C-448A-86B9-49E0729B39A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3B2537-A65C-448A-86B9-49E0729B39A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3B2537-A65C-448A-86B9-49E0729B39A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC66AF6-8B97-4D25-ACBB-4013390BFDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC66AF6-8B97-4D25-ACBB-4013390BFDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC66AF6-8B97-4D25-ACBB-4013390BFDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC66AF6-8B97-4D25-ACBB-4013390BFDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{756B1869-21E3-423F-9CE7-ED1F881D798A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{756B1869-21E3-423F-9CE7-ED1F881D798A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{756B1869-21E3-423F-9CE7-ED1F881D798A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{756B1869-21E3-423F-9CE7-ED1F881D798A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AE3CF8-1A8B-4A23-85C7-CC1660DB852D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AE3CF8-1A8B-4A23-85C7-CC1660DB852D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AE3CF8-1A8B-4A23-85C7-CC1660DB852D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AE3CF8-1A8B-4A23-85C7-CC1660DB852D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8A879A-F9E6-471B-9BAD-7D2B4919BE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8A879A-F9E6-471B-9BAD-7D2B4919BE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8A879A-F9E6-471B-9BAD-7D2B4919BE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8A879A-F9E6-471B-9BAD-7D2B4919BE01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E16AE8D-F23A-4C91-AA16-E01833083185} = {17F082EB-F246-4B6D-B5C0-F25C37E591EC}
+		{B532FEAC-5E7B-431B-9AC0-26314B32E4B8} = {FAE8B85B-7A38-49FE-BAC2-52A65BAAC5CD}
+		{DEEFFF21-B6EA-4608-BE62-DAEC17D4570B} = {FAE8B85B-7A38-49FE-BAC2-52A65BAAC5CD}
+		{587B05C0-6394-4A22-9727-F38EE5C876ED} = {14E5ADE2-1753-4E19-9015-AEC6B8DB8C1F}
+		{8B3B2537-A65C-448A-86B9-49E0729B39A3} = {14E5ADE2-1753-4E19-9015-AEC6B8DB8C1F}
+		{1EC66AF6-8B97-4D25-ACBB-4013390BFDBD} = {14E5ADE2-1753-4E19-9015-AEC6B8DB8C1F}
+		{756B1869-21E3-423F-9CE7-ED1F881D798A} = {14E5ADE2-1753-4E19-9015-AEC6B8DB8C1F}
+		{52AE3CF8-1A8B-4A23-85C7-CC1660DB852D} = {14E5ADE2-1753-4E19-9015-AEC6B8DB8C1F}
+		{BB8A879A-F9E6-471B-9BAD-7D2B4919BE01} = {CBC3B9D5-04F6-4960-8C31-29CA7B948983}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42AD2CBB-7113-4833-BA07-3544FCB20989}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,72 @@
+2020-07-07 18:25:46.907 +02:00 [Information] User profile is available. Using '"C:\Users\Venus\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-07 18:25:55.016 +02:00 [Information] For:COM1 Just Before Opened at:7/7/2020 4:25:55 PM
+2020-07-07 18:25:56.964 +02:00 [Information] For:COM1 Just After Opened at:7/7/2020 4:25:56 PM
+2020-07-07 18:26:25.907 +02:00 [Information] User profile is available. Using '"C:\Users\Venus\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-07 18:26:28.809 +02:00 [Information] For:COM1 Just Before Opened at:7/7/2020 4:26:28 PM
+2020-07-07 18:26:28.829 +02:00 [Information] For:COM1 Just After Opened at:7/7/2020 4:26:28 PM
+2020-07-07 18:26:29.249 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-07 18:26:29.250 +02:00 [Information] Hosting environment: "Development"
+2020-07-07 18:26:29.256 +02:00 [Information] Content root path: "E:\1.Projects\2020\magic-button\Sw\src\hub\magic-button-collector.api"
+2020-07-07 18:26:29.295 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger  
+2020-07-07 18:26:29.308 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-07-07 18:26:29.374 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/index.html  
+2020-07-07 18:26:29.378 +02:00 [Information] Request finished in 81.5012ms 301 
+2020-07-07 18:26:29.426 +02:00 [Information] Request finished in 57.5773ms 200 text/html;charset=utf-8
+2020-07-07 18:26:29.451 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/swagger-ui.css  
+2020-07-07 18:26:29.459 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/swagger-ui-standalone-preset.js  
+2020-07-07 18:26:29.459 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/swagger-ui-bundle.js  
+2020-07-07 18:26:29.540 +02:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-07-07 18:26:29.543 +02:00 [Information] Request finished in 92.2779ms 200 text/css
+2020-07-07 18:26:29.556 +02:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-07-07 18:26:29.558 +02:00 [Information] Request finished in 98.6546ms 200 application/javascript
+2020-07-07 18:26:29.598 +02:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-07-07 18:26:29.600 +02:00 [Information] Request finished in 140.6381ms 200 application/javascript
+2020-07-07 18:26:29.804 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/v1/swagger.json  
+2020-07-07 18:26:29.868 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/favicon-32x32.png  
+2020-07-07 18:26:29.877 +02:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2020-07-07 18:26:29.880 +02:00 [Information] Request finished in 11.9082ms 200 image/png
+2020-07-07 18:26:29.888 +02:00 [Information] Request finished in 85.0719ms 200 application/json;charset=utf-8
+2020-07-07 19:09:18.047 +02:00 [Information] User profile is available. Using '"C:\Users\Venus\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-07 19:09:22.785 +02:00 [Information] For:COM1 Just Before Opened at:7/7/2020 5:09:22 PM
+2020-07-07 19:09:22.806 +02:00 [Information] For:COM1 Just After Opened at:7/7/2020 5:09:22 PM
+2020-07-07 19:09:22.978 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-07 19:09:22.979 +02:00 [Information] Hosting environment: "Development"
+2020-07-07 19:09:22.985 +02:00 [Information] Content root path: "E:\1.Projects\2020\magic-button\Sw\src\hub\magic-button-collector.api"
+2020-07-07 19:09:23.023 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/index.html  
+2020-07-07 19:09:23.037 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-07-07 19:09:23.119 +02:00 [Information] Request finished in 97.9576ms 200 text/html;charset=utf-8
+2020-07-07 19:09:23.464 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/v1/swagger.json  
+2020-07-07 19:09:23.521 +02:00 [Information] Request finished in 57.1718ms 200 application/json;charset=utf-8
+2020-07-07 19:19:10.037 +02:00 [Information] User profile is available. Using '"C:\Users\Venus\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-07 19:19:10.251 +02:00 [Information] For:COM1 Just Before Opened at:7/7/2020 5:19:10 PM
+2020-07-07 19:19:10.274 +02:00 [Information] For:COM1 Just After Opened at:7/7/2020 5:19:10 PM
+2020-07-07 19:19:29.500 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-07 19:19:29.505 +02:00 [Information] Hosting environment: "Development"
+2020-07-07 19:19:29.506 +02:00 [Information] Content root path: "E:\1.Projects\2020\magic-button\Sw\src\hub\magic-button-collector.api"
+2020-07-07 19:19:29.542 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/index.html  
+2020-07-07 19:19:29.558 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-07-07 19:19:29.638 +02:00 [Information] Request finished in 97.553ms 200 text/html;charset=utf-8
+2020-07-07 19:19:29.871 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/v1/swagger.json  
+2020-07-07 19:19:29.934 +02:00 [Information] Request finished in 56.8608ms 200 application/json;charset=utf-8
+2020-07-07 19:21:45.116 +02:00 [Information] User profile is available. Using '"C:\Users\Venus\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-07 19:21:45.308 +02:00 [Information] For:COM1 Just Before Opened at:7/7/2020 5:21:45 PM
+2020-07-07 19:21:45.339 +02:00 [Information] For:COM1 Just After Opened at:7/7/2020 5:21:45 PM
+2020-07-07 19:21:53.857 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-07 19:21:53.858 +02:00 [Information] Hosting environment: "Development"
+2020-07-07 19:21:53.859 +02:00 [Information] Content root path: "E:\1.Projects\2020\magic-button\Sw\src\hub\magic-button-collector.api"
+2020-07-07 19:21:53.896 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/index.html  
+2020-07-07 19:21:53.911 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-07-07 19:21:54.000 +02:00 [Information] Request finished in 105.8728ms 200 text/html;charset=utf-8
+2020-07-07 19:21:54.234 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/v1/swagger.json  
+2020-07-07 19:21:54.307 +02:00 [Information] Request finished in 68.7044ms 200 application/json;charset=utf-8
+2020-07-07 20:29:29.320 +02:00 [Information] User profile is available. Using '"C:\Users\Venus\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-07 20:29:29.681 +02:00 [Information] For:COM1 Just Before Opened at:7/7/2020 6:29:29 PM
+2020-07-07 20:29:29.704 +02:00 [Information] For:COM1 Just After Opened at:7/7/2020 6:29:29 PM
+2020-07-07 20:29:30.126 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-07 20:29:30.133 +02:00 [Information] Hosting environment: "Development"
+2020-07-07 20:29:30.135 +02:00 [Information] Content root path: "E:\1.Projects\2020\magic-button\Sw\src\hub\magic-button-collector.api"
+2020-07-07 20:29:30.158 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/index.html  
+2020-07-07 20:29:30.175 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-07-07 20:29:30.272 +02:00 [Information] Request finished in 116.2464ms 200 text/html;charset=utf-8
+2020-07-07 20:29:30.502 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/v1/swagger.json  
+2020-07-07 20:29:30.563 +02:00 [Information] Request finished in 60.7429ms 200 application/json;charset=utf-8

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>adme360-cms.services</AssemblyName>
+    <RootNamespace>adme360.cms.services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="V1\UsersControllerDependencyBlock.cs~RF38d88c2.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\adme360-cms.contracts\adme360-cms.contracts.csproj" />
+    <ProjectReference Include="..\adme360-cms.repository\adme360-cms.repository.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>adme360-cms.contracts</AssemblyName>
+    <RootNamespace>adme360.cms.contracts</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Customers\vo3oiw2z.mde~" />
+    <None Remove="Stores\ICreateStoreProcessor.cs~RF6a8e09b.TMP" />
+    <None Remove="Stores\ICreateStoreProcessor.cs~RF6af7963.TMP" />
+    <None Remove="Stores\IDeleteStoreProcessor.cs~RF6ab1d0e.TMP" />
+    <None Remove="Stores\IInquiryAllStoresProcessor.cs~RF6ac13c2.TMP" />
+    <None Remove="Stores\IUpdateStoreProcessor.cs~RF6afcca4.TMP" />
+    <None Remove="V1\ICategoriesControllerDependencyBlock.cs~RF4daec0c.TMP" />
+    <None Remove="V1\IContainersControllerDependencyBlock.cs~RF975cd33.TMP" />
+    <None Remove="V1\ICustomersControllerDependencyBlock.cs~RF9a88f57.TMP" />
+    <None Remove="V1\ICustomersControllerDependencyBlock.cs~RFef4cece.TMP" />
+    <None Remove="V1\IStoresControllerDependencyBlock.cs~RF6bda283.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\adme360-common.dtos\adme360-common.dtos.csproj" />
+    <ProjectReference Include="..\..\common\adme360-common.infrastructure\adme360-common.infrastructure.csproj" />
+    <ProjectReference Include="..\adme360-cms.model\adme360-cms.model.csproj" />
+  </ItemGroup>
+
+</Project>

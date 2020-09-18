@@ -1,0 +1,23 @@
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+
+COPY ["auth/dl-wm-suite-auth.api/dl-wm-suite-auth.api.csproj", "/auth/"]
+COPY ["common/dl-wm-suite-common.dtos/dl-wm-suite-common.dtos.csproj", "/common/dl-wm-suite-common.dtos/"]
+COPY ["common/dl-wm-suite-common.infrastructure/dl-wm-suite-common.infrastructure.csproj", "/common/dl-wm-suite-common.infrastructure/"]
+RUN dotnet restore ./auth/dl-wm-suite-auth.api.csproj
+COPY . ./auth
+WORKDIR /auth
+
+FROM build AS publish
+RUN dotnet build ./dl-wm-suite-auth.api.csproj -c Release -o out/build 
+RUN dotnet publish ./dl-wm-suite-auth.api.csproj -c Release -o out/publish
+
+FROM base AS final
+WORKDIR /auth
+COPY --from=publish /auth/out/publish .
+ENTRYPOINT ["dotnet", "./dl-wm-suite-auth.api.dll"]
+
+

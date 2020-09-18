@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>adme360-common.dtos</AssemblyName>
+    <RootNamespace>adme360.common.dtos</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Vms\Accounts\AccountWithNewPasswordModification.cs~RF13beeab7.TMP" />
+    <None Remove="Vms\Categories\CategoryForCreationUiModel.cs~RF4f0e3d4.TMP" />
+    <None Remove="Vms\Devices\DeviceForActivationModel.cs~RFd9056f.TMP" />
+    <None Remove="Vms\Devices\DeviceForDeletionUiModel.cs~RF6c97ae.TMP" />
+    <None Remove="Vms\Customers\EmployeeForDeletionUiModel.cs~RF7809eb.TMP" />
+    <None Remove="Vms\Roles\RoleUiModel.cs~RF2eac562b.TMP" />
+    <None Remove="Vms\Stores\StoreUiModel.cs~RF6a9ec4f.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+  </ItemGroup>
+
+</Project>

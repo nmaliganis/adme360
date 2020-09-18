@@ -1,0 +1,25 @@
+2020-07-22 22:05:17.081 +02:00 [Information] User profile is available. Using '"C:\Users\Venus\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-22 22:05:17.785 +02:00 [Information] For:COM1 Just Before Opened at:7/22/2020 8:05:17 PM
+2020-07-22 22:05:17.836 +02:00 [Information] For:COM1 Just After Opened at:7/22/2020 8:05:17 PM
+2020-07-22 22:05:18.875 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-22 22:05:18.878 +02:00 [Information] Hosting environment: "Development"
+2020-07-22 22:05:18.899 +02:00 [Information] Content root path: "E:\1.Projects\2020\magic-button\Sw\src\hub\magic-button-collector.api"
+2020-07-22 22:05:18.957 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger  
+2020-07-22 22:05:18.992 +02:00 [Warning] Failed to determine the https port for redirect.
+2020-07-22 22:05:19.191 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/index.html  
+2020-07-22 22:05:19.193 +02:00 [Information] Request finished in 240.8567ms 301 
+2020-07-22 22:05:19.339 +02:00 [Information] Request finished in 148.4946ms 200 text/html;charset=utf-8
+2020-07-22 22:05:19.440 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/swagger-ui.css  
+2020-07-22 22:05:19.459 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/swagger-ui-bundle.js  
+2020-07-22 22:05:19.488 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/swagger-ui-standalone-preset.js  
+2020-07-22 22:05:19.636 +02:00 [Information] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"'
+2020-07-22 22:05:19.640 +02:00 [Information] Request finished in 166.8594ms 200 application/javascript
+2020-07-22 22:05:19.736 +02:00 [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+2020-07-22 22:05:19.739 +02:00 [Information] Request finished in 299.0643ms 200 text/css
+2020-07-22 22:05:19.795 +02:00 [Information] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"'
+2020-07-22 22:05:19.797 +02:00 [Information] Request finished in 337.3341ms 200 application/javascript
+2020-07-22 22:05:20.708 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/v1/swagger.json  
+2020-07-22 22:05:20.794 +02:00 [Information] Request starting HTTP/1.1 GET http://localhost:6300/swagger/favicon-32x32.png  
+2020-07-22 22:05:20.803 +02:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2020-07-22 22:05:20.806 +02:00 [Information] Request finished in 12.33ms 200 image/png
+2020-07-22 22:05:20.815 +02:00 [Information] Request finished in 107.1844ms 200 application/json;charset=utf-8

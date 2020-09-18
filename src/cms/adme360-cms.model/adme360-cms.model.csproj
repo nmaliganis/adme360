@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>adme360-cms.model</AssemblyName>
+    <RootNamespace>adme360.cms.model</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Customers\Advertiser.cs~RF9976491.TMP" />
+    <None Remove="Customers\EmployeeBusinessRules.cs~RF14bbf8f1.TMP" />
+    <None Remove="Customers\EmployeeBusinessRules.cs~RF4925410.TMP" />
+    <None Remove="Devices\Device.cs~RF64292aa.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="1.15.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\adme360-common.infrastructure\adme360-common.infrastructure.csproj" />
+  </ItemGroup>
+</Project>

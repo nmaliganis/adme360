@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Threading.Tasks;
 using adme360.cms.contracts.Customers;
-using adme360.cms.model.Addresses;
 using adme360.cms.model.Customers;
 using adme360.cms.model.Users;
 using adme360.cms.repository.ContractRepositories;
@@ -81,25 +80,11 @@ namespace adme360.cms.services.Customers
         if (categoryToBeInjected == null)
           throw new CategoryDoesNotExistException(newCustomerUiModel.CustomerCategoryId);
 
-        Customer customerToBeInjected;
+        Customer customerToBeInjected = isAdvertiser ? (Customer) new Advertiser() : new Advertised();
 
-        if (isAdvertiser)
-        {
-          customerToBeInjected = new Advertiser();
-        }
-        else
-        {
-          customerToBeInjected = new Advertised();
-        }
-
-        customerToBeInjected.Firstname = newCustomerUiModel.CustomerFirstname;
-        customerToBeInjected.Lastname = newCustomerUiModel.CustomerLastname;
-        customerToBeInjected.Brand = newCustomerUiModel.CustomerBrand;
-        customerToBeInjected.Email = newCustomerUiModel.CustomerEmail;
-        customerToBeInjected.Phone = newCustomerUiModel.CustomerPhone;
-        customerToBeInjected.Vat = newCustomerUiModel.CustomerVat;
-        customerToBeInjected.Website = newCustomerUiModel.CustomerWebsite;
-        customerToBeInjected.Notes = newCustomerUiModel.CustomerNotes;
+        customerToBeInjected = isAdvertiser
+          ? (Customer) _autoMapper.Map<Advertiser>(newCustomerUiModel)
+          : _autoMapper.Map<Advertised>(newCustomerUiModel);
 
         customerToBeInjected.InjectWithAuditCreation(accountIdToCreateThisCustomer);
         customerToBeInjected.InjectWithUser(userToBeCreated);

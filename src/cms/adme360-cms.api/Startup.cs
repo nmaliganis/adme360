@@ -243,9 +243,8 @@ namespace adme360.cms.api
         cfg.AddProfile<CategoryForCreationΤοCategoryEntityUiAutoMapperProfile>();
         cfg.AddProfile<CategoryEntityToCategoryUiAutoMapperProfile>();
         cfg.AddProfile<CustomerEntityToCustomerUiAutoMapperProfile>();
-        //cfg.AddProfile<DeviceEntityToDeviceUiAutoMapperProfile>();
-        //cfg.AddProfile<DeviceEntityToDeviceCreationUiAutoMapperProfile>();
-        //cfg.AddProfile<DeviceEntityToDeviceForCreationUiAutoMapperProfile>();
+        cfg.AddProfile<CustomerUiModelToAdvertisedEntityAutoMapperProfile>();
+        cfg.AddProfile<CustomerUiModelToAdvertiserEntityAutoMapperProfile>();
         cfg.AddProfile<UserEntityToUserUiAutoMapperProfile>();
       });
 

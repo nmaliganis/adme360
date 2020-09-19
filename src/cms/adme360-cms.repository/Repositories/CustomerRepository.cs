@@ -50,7 +50,11 @@ namespace adme360.cms.repository.Repositories
 
     public Customer FindOneByVat(string vat)
     {
-      throw new NotImplementedException();
+      return (Customer)
+        Session.CreateCriteria(typeof(Customer))
+          .Add(Expression.Eq("Vat", vat))
+          .UniqueResult()
+        ;
     }
 
     public Customer FindByFirstNameAndLastName(string lastName, string firstName)

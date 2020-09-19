@@ -10,6 +10,7 @@ using adme360.common.infrastructure.PropertyMappings;
 using adme360.common.infrastructure.PropertyMappings.TypeHelpers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace adme360.cms.api.Controllers.API.V1
 {
@@ -53,14 +54,14 @@ namespace adme360.cms.api.Controllers.API.V1
     /// POST : Create a New Advertised.
     /// </summary>
     /// <param name="customerForCreationUiModel">CustomerForCreationUiModel the Request Model for Creation</param>
-    /// <remarks> return a ResponseEntity with status 201 (Created) if the new Category is created, 400 (Bad Request), 500 (Server Error) </remarks>
-    /// <response code="201">Created (if the Advertiser is created)</response>
+    /// <remarks> return a ResponseEntity with status 201 (Created) if the new Advertised is created, 400 (Bad Request), 500 (Server Error) </remarks>
+    /// <response code="201">Created (if the Advertised is created)</response>
     /// <response code="400">Bad Request</response>
     /// <response code="500">Internal Server Error</response>
     [HttpPost(Name = "PostAdvertisedRoute")]
     [ValidateModel]
     [Authorize(AuthenticationSchemes = "Bearer", Roles = "SU")]
-    public async Task<IActionResult> PostAdvertisedRouteAsync([FromBody] CustomerForCreationUiModel customerForCreationUiModel)
+    public async Task<IActionResult> PostAdvertisedAsync([FromBody] CustomerForCreationUiModel customerForCreationUiModel)
     {
       var userAudit = await _inquiryUserProcessor.GetUserByLoginAsync(GetEmailFromClaims());
 
@@ -72,37 +73,37 @@ namespace adme360.cms.api.Controllers.API.V1
       var newCreatedAdvertised =
         await _createCustomerProcessor.CreateCustomerAsync(userAudit.Id, customerForCreationUiModel, false);
 
-      //switch (newCreatedCategory.Message)
-      //{
-      //  case ("SUCCESS_CREATION"):
-      //  {
-      //    Log.Information(
-      //      $"--Method:PostCategoryRouteAsync -- Message:CATEGORY_CREATION_SUCCESSFULLY -- " +
-      //      $"Datetime:{DateTime.Now} -- CategoryInfo:{categoryForCreationUiModel.CategoryName}");
-      //    return Created(nameof(PostCategoryRouteAsync), newCreatedCategory);
-      //  }
-      //  case ("ERROR_ALREADY_EXISTS"):
-      //  {
-      //    Log.Error(
-      //      $"--Method:PostCategoryRouteAsync -- Message:ERROR_CATEGORY_ALREADY_EXISTS -- " +
-      //      $"Datetime:{DateTime.Now} -- CategoryInfo:{categoryForCreationUiModel.CategoryName}");
-      //    return BadRequest(new {errorMessage = "CATEGORY_ALREADY_EXISTS"});
-      //  }
-      //  case ("ERROR_CATEGORY_NOT_MADE_PERSISTENT"):
-      //  {
-      //    Log.Error(
-      //      $"--Method:PostCategoryRouteAsync -- Message:ERROR_CATEGORY_NOT_MADE_PERSISTENT -- " +
-      //      $"Datetime:{DateTime.Now} -- CategoryInfo:{categoryForCreationUiModel.CategoryName}");
-      //    return BadRequest(new {errorMessage = "ERROR_CREATION_NEW_CATEGORY"});
-      //  }
-      //  case ("UNKNOWN_ERROR"):
-      //  {
-      //    Log.Error(
-      //      $"--Method:PostCategoryRouteAsync -- Message:ERROR_CREATION_NEW_CATEGORY -- " +
-      //      $"Datetime:{DateTime.Now} -- CategoryInfo:{categoryForCreationUiModel.CategoryName}");
-      //    return BadRequest(new {errorMessage = "ERROR_CREATION_NEW_CATEGORY"});
-      //  }
-      //}
+      switch (newCreatedAdvertised.Message)
+      {
+        case ("SUCCESS_CREATION"):
+          {
+            Log.Information(
+              $"--Method:PostAdvertisedAsync -- Message:ADVERTISED_CREATION_SUCCESSFULLY -- " +
+              $"Datetime:{DateTime.Now} -- AdvertisedInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
+            return Created(nameof(PostAdvertisedAsync), newCreatedAdvertised);
+          }
+        case ("ERROR_ALREADY_EXISTS"):
+          {
+            Log.Error(
+              $"--Method:PostAdvertisedAsync -- Message:ERROR_ADVERTISED_ALREADY_EXISTS -- " +
+              $"Datetime:{DateTime.Now} -- AdvertisedInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
+            return BadRequest(new { errorMessage = "CATEGORY_ALREADY_EXISTS" });
+          }
+        case ("ERROR_NOT_MADE_PERSISTENT"):
+          {
+            Log.Error(
+              $"--Method:PostAdvertisedAsync -- Message:ERROR_ADVERTISED_NOT_MADE_PERSISTENT -- " +
+              $"Datetime:{DateTime.Now} -- AdvertisedInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
+            return BadRequest(new { errorMessage = "ERROR_CREATION_NEW_CATEGORY" });
+          }
+        case ("UNKNOWN_ERROR"):
+          {
+            Log.Error(
+              $"--Method:PostAdvertisedAsync -- Message:ERROR_CREATION_NEW_ADVERTISED -- " +
+              $"Datetime:{DateTime.Now} -- AdvertisedInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
+            return BadRequest(new { errorMessage = "ERROR_CREATION_NEW_ADVERTISED" });
+          }
+      }
 
       return NotFound();
     }

@@ -8,6 +8,20 @@ namespace adme360.cms.model.Customers
 {
   public abstract class Customer : EntityBase<Guid>, IAggregateRoot
   {
+    protected Customer()
+    {
+      OnCreated();
+    }
+
+    private void OnCreated()
+    {
+      this.CreatedDate = DateTime.Now;
+      this.ModifiedDate = DateTime.Now;
+      this.Address = new Address();
+      this.IsActive = true;
+      this.Activated = false;
+    }
+
     public abstract CustomerType Type { get; }
 
     public virtual string Firstname { get; set; }

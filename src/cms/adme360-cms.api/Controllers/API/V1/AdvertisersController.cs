@@ -85,28 +85,28 @@ namespace adme360.cms.api.Controllers.API.V1
           {
             Log.Information(
               $"--Method:PostAdvertiserAsync -- Message:ADVERTISER_CREATION_SUCCESSFULLY -- " +
-              $"Datetime:{DateTime.Now} -- CategoryInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
+              $"Datetime:{DateTime.Now} -- AdvertiserInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
             return Created(nameof(PostAdvertiserAsync), newCreatedAdvertiser);
           }
         case ("ERROR_ALREADY_EXISTS"):
           {
             Log.Error(
               $"--Method:PostAdvertiserAsync -- Message:ERROR_ADVERTISER_ALREADY_EXISTS -- " +
-              $"Datetime:{DateTime.Now} -- CategoryInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
+              $"Datetime:{DateTime.Now} -- AdvertiserInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
             return BadRequest(new { errorMessage = "ADVERTISER_ALREADY_EXISTS" });
           }
         case ("ERROR_NOT_MADE_PERSISTENT"):
           {
             Log.Error(
               $"--Method:PostAdvertiserAsync -- Message:ADVERTISER_NOT_MADE_PERSISTENT -- " +
-              $"Datetime:{DateTime.Now} -- CategoryInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
+              $"Datetime:{DateTime.Now} -- AdvertiserInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
             return BadRequest(new { errorMessage = "ERROR_CREATION_NEW_ADVERTISER" });
           }
         case ("UNKNOWN_ERROR"):
           {
             Log.Error(
               $"--Method:PostAdvertiserAsync -- Message:ERROR_CREATION_NEW_ADVERTISER -- " +
-              $"Datetime:{DateTime.Now} -- CategoryInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
+              $"Datetime:{DateTime.Now} -- AdvertiserInfo:{customerForCreationUiModel.CustomerVat + customerForCreationUiModel.CustomerEmail}");
             return BadRequest(new { errorMessage = "ERROR_CREATION_NEW_ADVERTISER" });
           }
       }

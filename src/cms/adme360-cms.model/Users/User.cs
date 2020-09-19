@@ -19,6 +19,7 @@ namespace adme360.cms.model.Users
       this.CreatedDate = DateTime.UtcNow;
       this.ModifiedDate = DateTime.UtcNow;
       this.ResetDate = DateTime.UtcNow;
+      this.UsersRoles = new HashSet<UserRole>();
     }
 
     public virtual string Login { get; set; }

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dl.wm.models.DTOs.Base;
-using dl.wm.presenter.ServiceAgents.Base;
+using adme360.models.DTOs.Base;
+using adme360.presenter.ServiceAgents.Base;
 
-namespace dl.wm.presenter.ServiceAgents.Contracts.Base
+namespace adme360.presenter.ServiceAgents.Contracts.Base
 {
     public interface IEntityService<TEntity> : IService where TEntity : IUiModel
     {

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using dl.wm.models.DTOs.Simcards;
-using dl.wm.presenter.Exceptions;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls.Base;
+using adme360.models.DTOs.Simcards;
+using adme360.presenter.Exceptions;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls.Base;
 using Newtonsoft.Json;
 using RestSharp;
 
-namespace dl.wm.presenter.ServiceAgents.Impls
+namespace adme360.presenter.ServiceAgents.Impls
 {
     public class SimcardsService : BaseService<SimcardUiModel>, ISimcardsService
     {

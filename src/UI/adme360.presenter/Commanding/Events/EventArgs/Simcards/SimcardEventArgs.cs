@@ -1,6 +1,6 @@
-﻿using dl.wm.models.DTOs.Simcards;
+﻿using adme360.models.DTOs.Simcards;
 
-namespace dl.wm.presenter.Commanding.Events.EventArgs.Simcards
+namespace adme360.presenter.Commanding.Events.EventArgs.Simcards
 {
     public class SimcardEventArgs : System.EventArgs
     {

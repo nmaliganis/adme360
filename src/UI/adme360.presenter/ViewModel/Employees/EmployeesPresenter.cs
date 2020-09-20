@@ -1,12 +1,12 @@
 ﻿using System;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.view.Controls.Employees;
-using dl.wm.presenter.Base;
-using dl.wm.presenter.Exceptions;
-using dl.wm.presenter.Utilities;
+using adme360.presenter.Base;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.view.Controls.Employees;
+using adme360.presenter.Exceptions;
+using adme360.presenter.Utilities;
 
-namespace dl.wm.presenter.ViewModel.Employees
+namespace adme360.presenter.ViewModel.Employees
 {
     public class EmployeesPresenter : BasePresenter<IEmployeesView, IEmployeesService>
     {

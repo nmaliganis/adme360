@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using dl.wm.models.DTOs.Firmwares;
-using dl.wm.presenter.ServiceAgents.Contracts.Base;
+using adme360.models.DTOs.Firmwares;
+using adme360.presenter.ServiceAgents.Contracts.Base;
 
-namespace dl.wm.presenter.ServiceAgents.Contracts
+namespace adme360.presenter.ServiceAgents.Contracts
 {
     public interface IFirmwaresService : IEntityService<FirmwareUiModel>
     {

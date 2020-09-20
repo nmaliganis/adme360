@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace dl.wm.presenter.Exceptions
+namespace adme360.presenter.Exceptions
 {
     public class ServiceParseException : Exception
     {

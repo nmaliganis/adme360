@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Threading.Tasks;
-using dl.wm.models.DTOs.Devices;
-using dl.wm.models.DTOs.Simcards;
-using dl.wm.presenter.Base;
-using dl.wm.presenter.Exceptions;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.presenter.Utilities;
-using dl.wm.view.Controls.Simcards.AddEditFlyoutSimcard;
+using adme360.presenter.Base;
+using adme360.models.DTOs.Devices;
+using adme360.models.DTOs.Simcards;
+using adme360.presenter.Exceptions;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.presenter.Utilities;
+using adme360.view.Controls.Simcards.AddEditFlyoutSimcard;
 
-namespace dl.wm.presenter.ViewModel.Simcards
+namespace adme360.presenter.ViewModel.Simcards
 {
     public class UcFlySimcardManagementPresenter : BasePresenter<IUcFlySimcardManagementView, ISimcardsService>
     {

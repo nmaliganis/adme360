@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dl.wm.presenter.Exceptions.UserJwts
+namespace adme360.presenter.Exceptions.UserJwts
 {
     public class BadRequestForUserJwtWasCatch : Exception
     {

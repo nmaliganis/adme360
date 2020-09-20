@@ -1,10 +1,10 @@
-﻿using dl.wm.presenter.Base;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.presenter.Utilities;
-using dl.wm.view.Controls.Firmwares;
+﻿using adme360.presenter.Base;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.presenter.Utilities;
+using adme360.view.Controls.Firmwares;
 
-namespace dl.wm.presenter.ViewModel.Firmwares
+namespace adme360.presenter.ViewModel.Firmwares
 {
     public class FirmwaresPresenter : BasePresenter<IFirmwaresView, IFirmwaresService>
     {

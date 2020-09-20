@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace dl.wm.presenter.UriBuilders.ApiFactories.Base
+namespace adme360.presenter.UriBuilders.ApiFactories.Base
 {
     public abstract class BaseClientUri
     {

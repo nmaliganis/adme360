@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace dl.wm.presenter.Exceptions
+namespace adme360.presenter.Exceptions
 {
     public class ServiceHttpRequestException<T> : Exception
     {

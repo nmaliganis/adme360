@@ -1,4 +1,4 @@
-﻿namespace dl.wm.presenter.UriBuilders.Factories
+﻿namespace adme360.presenter.UriBuilders.Factories
 {
     public interface IClientUriFactory
     {

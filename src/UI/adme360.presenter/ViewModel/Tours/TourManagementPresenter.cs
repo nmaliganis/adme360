@@ -1,11 +1,11 @@
-﻿using dl.wm.presenter.Base;
-using dl.wm.presenter.Helpers;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.presenter.Utilities;
-using dl.wm.view.Controls.Tours;
+﻿using adme360.presenter.Base;
+using adme360.presenter.Helpers;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.presenter.Utilities;
+using adme360.view.Controls.Tours;
 
-namespace dl.wm.presenter.ViewModel.Tours
+namespace adme360.presenter.ViewModel.Tours
 {
     public class TourManagementPresenter : BasePresenter<ITourManagementView, IToursService>
     {

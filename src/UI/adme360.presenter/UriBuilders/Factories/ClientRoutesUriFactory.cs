@@ -1,6 +1,6 @@
-﻿using dl.wm.presenter.UriBuilders.ApiFactories;
+﻿using adme360.presenter.UriBuilders.ApiFactories;
 
-namespace dl.wm.presenter.UriBuilders.Factories
+namespace adme360.presenter.UriBuilders.Factories
 {
     public class ClientRoutesUriFactory : IClientUriFactory
     {

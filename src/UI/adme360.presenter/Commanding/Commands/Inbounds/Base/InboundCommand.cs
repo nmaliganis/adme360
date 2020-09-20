@@ -1,7 +1,7 @@
-﻿using dl.wm.presenter.Commanding.Events.Inbound;
-using dl.wm.presenter.Commanding.Servers.Base;
+﻿using adme360.presenter.Commanding.Events.Inbound;
+using adme360.presenter.Commanding.Servers.Base;
 
-namespace dl.wm.presenter.Commanding.Commands.Inbounds.Base
+namespace adme360.presenter.Commanding.Commands.Inbounds.Base
 {
 
     public interface ICommand

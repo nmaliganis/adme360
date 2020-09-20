@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dl.wm.presenter.Consts
+namespace adme360.presenter.Consts
 {
     public static class ConstVariables
     {

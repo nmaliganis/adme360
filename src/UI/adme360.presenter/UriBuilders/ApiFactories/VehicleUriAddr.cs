@@ -1,6 +1,6 @@
-﻿using dl.wm.presenter.UriBuilders.ApiFactories.Base;
+﻿using adme360.presenter.UriBuilders.ApiFactories.Base;
 
-namespace dl.wm.presenter.UriBuilders.ApiFactories
+namespace adme360.presenter.UriBuilders.ApiFactories
 {
     public class VehicleUriAddr : BaseClientUri
     {

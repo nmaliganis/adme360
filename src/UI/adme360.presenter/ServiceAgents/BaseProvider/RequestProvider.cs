@@ -4,12 +4,12 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using dl.wm.presenter.Exceptions;
+using adme360.presenter.Exceptions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 
-namespace dl.wm.presenter.ServiceAgents.BaseProvider
+namespace adme360.presenter.ServiceAgents.BaseProvider
 {
     public sealed class RequestProvider : IRequestProvider
     {

@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Threading.Tasks;
-using dl.wm.models.DTOs.Dashboards;
-using dl.wm.models.DTOs.Users;
-using dl.wm.models.DTOs.Users.Accounts;
-using dl.wm.presenter.Exceptions;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls.Base;
-using Newtonsoft.Json;
-using RestSharp;
+﻿using adme360.models.DTOs.Dashboards;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls.Base;
 
-namespace dl.wm.presenter.ServiceAgents.Impls
+namespace adme360.presenter.ServiceAgents.Impls
 {
     public class DashboardService : BaseService<DashboardUiModel>, IDashboardService
     {

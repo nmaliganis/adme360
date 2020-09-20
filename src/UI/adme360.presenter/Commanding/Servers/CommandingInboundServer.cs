@@ -1,6 +1,6 @@
-﻿using dl.wm.presenter.Commanding.Servers.Base;
+﻿using adme360.presenter.Commanding.Servers.Base;
 
-namespace dl.wm.presenter.Commanding.Servers
+namespace adme360.presenter.Commanding.Servers
 {
     public sealed class CommandingInboundServer : CommandingInboundBaseServer
     {

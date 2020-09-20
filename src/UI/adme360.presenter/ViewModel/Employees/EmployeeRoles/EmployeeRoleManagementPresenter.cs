@@ -1,14 +1,14 @@
 ﻿using System;
-using dl.wm.models.DTOs.Employees.EmployeeRoles;
-using dl.wm.presenter.Base;
-using dl.wm.presenter.Exceptions;
-using dl.wm.presenter.Helpers;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.presenter.Utilities;
-using dl.wm.view.Controls.Employees.EmployeeRoles;
+using adme360.presenter.Base;
+using adme360.models.DTOs.Employees.EmployeeRoles;
+using adme360.presenter.Exceptions;
+using adme360.presenter.Helpers;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.presenter.Utilities;
+using adme360.view.Controls.Employees.EmployeeRoles;
 
-namespace dl.wm.presenter.ViewModel.Employees.EmployeeRoles
+namespace adme360.presenter.ViewModel.Employees.EmployeeRoles
 {
     public class EmployeeRoleManagementPresenter : BasePresenter<IEmployeeRoleManagementView, IEmployeeRolesService>
     {

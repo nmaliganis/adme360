@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Win32;
 
-namespace dl.wm.presenter.Utilities
+namespace adme360.presenter.Utilities
 {
     public static class RegistryEditCls
     {

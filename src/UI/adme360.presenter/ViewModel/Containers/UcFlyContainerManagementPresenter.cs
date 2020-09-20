@@ -1,13 +1,13 @@
-﻿using dl.wm.presenter.Base;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.view.Controls.Containers.AddEditFlyoutContainer;
+﻿using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.view.Controls.Containers.AddEditFlyoutContainer;
 using System;
-using dl.wm.models.DTOs.Containers;
-using dl.wm.presenter.Exceptions;
-using dl.wm.presenter.Utilities;
+using adme360.presenter.Base;
+using adme360.models.DTOs.Containers;
+using adme360.presenter.Exceptions;
+using adme360.presenter.Utilities;
 
-namespace dl.wm.presenter.ViewModel.Containers
+namespace adme360.presenter.ViewModel.Containers
 {
     public class UcFlyContainerManagementPresenter : BasePresenter<IUcFlyContainerManagementView, IContainersService>
     {

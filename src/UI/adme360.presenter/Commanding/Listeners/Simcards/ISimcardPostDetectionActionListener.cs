@@ -1,6 +1,6 @@
-﻿using dl.wm.presenter.Commanding.Events.EventArgs.Simcards;
+﻿using adme360.presenter.Commanding.Events.EventArgs.Simcards;
 
-namespace dl.wm.presenter.Commanding.Listeners.Simcards
+namespace adme360.presenter.Commanding.Listeners.Simcards
 {
     public interface ISimcardPostDetectionActionListener
     {

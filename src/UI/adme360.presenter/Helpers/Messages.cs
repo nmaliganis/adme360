@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace dl.wm.presenter.Helpers
+namespace adme360.presenter.Helpers
 {
     public static class Messages
     {

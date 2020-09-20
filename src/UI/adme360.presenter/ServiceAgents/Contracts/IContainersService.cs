@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using dl.wm.models.DTOs.Containers;
-using dl.wm.presenter.ServiceAgents.Contracts.Base;
+using adme360.models.DTOs.Containers;
+using adme360.presenter.ServiceAgents.Contracts.Base;
 
-namespace dl.wm.presenter.ServiceAgents.Contracts
+namespace adme360.presenter.ServiceAgents.Contracts
 {
     public interface IContainersService : IEntityService<ContainerUiModel>
     {

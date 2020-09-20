@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 
-namespace dl.wm.presenter.Helpers
+namespace adme360.presenter.Helpers
 {
     public static class JwtHelper
     {

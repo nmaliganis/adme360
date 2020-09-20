@@ -1,17 +1,17 @@
-﻿using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.presenter.Base;
-using dl.wm.view.Controls.Configurations;
+﻿using adme360.presenter.Base;
+using adme360.view.Controls.Configurations;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
 
-namespace dl.wm.presenter.ViewModel.Configurations
+namespace adme360.presenter.ViewModel.Configurations
 {
-    public class UcConfigurationManagementPresenter : BasePresenter<IUcCnfigurationManagementView, IVehiclesService>
+    public class UcConfigurationManagementPresenter : BasePresenter<IUcConfigurationManagementView, IVehiclesService>
     {
-        public UcConfigurationManagementPresenter(IUcCnfigurationManagementView view)
+        public UcConfigurationManagementPresenter(IUcConfigurationManagementView view)
             : this(view, new VehiclesService())
         {
         }
-        public UcConfigurationManagementPresenter(IUcCnfigurationManagementView view, IVehiclesService service)
+        public UcConfigurationManagementPresenter(IUcConfigurationManagementView view, IVehiclesService service)
             : base(view, service)
         {
         }

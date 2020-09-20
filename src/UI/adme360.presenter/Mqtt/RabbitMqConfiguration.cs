@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dl.wm.presenter.Mqtt
+namespace adme360.presenter.Mqtt
 {
     public static class RabbitMqConfiguration
     {

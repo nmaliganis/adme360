@@ -1,11 +1,11 @@
 ﻿using System;
-using dl.wm.presenter.Commanding;
-using dl.wm.presenter.Commanding.Commands;
-using dl.wm.presenter.Commanding.Servers;
+using adme360.presenter.Commanding;
+using adme360.presenter.Commanding.Commands;
+using adme360.presenter.Commanding.Servers;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
-namespace dl.wm.presenter.Mqtt
+namespace adme360.presenter.Mqtt
 {
     public class RabbitMqttConfiguration : IRabbitMqttConfiguration
     {

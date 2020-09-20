@@ -1,8 +1,8 @@
-﻿using dl.wm.models.DTOs.Base;
-using dl.wm.presenter.Commanding.Commands.Inbounds.Base;
-using dl.wm.presenter.Commanding.Events.Inbound;
+﻿using adme360.models.DTOs.Base;
+using adme360.presenter.Commanding.Commands.Inbounds.Base;
+using adme360.presenter.Commanding.Events.Inbound;
 
-namespace dl.wm.presenter.Commanding.Commands.Inbounds.Containers
+namespace adme360.presenter.Commanding.Commands.Inbounds.Containers
 {
     internal class ContainerPostDetected : InboundCommand
     {

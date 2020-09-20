@@ -2,7 +2,7 @@
 
 namespace adme360.view.Controls.Configurations
 {
-    public interface IUcCnfigurationManagementView : IView
+    public interface IUcConfigurationManagementView : IView
     {
         string SelectedModuleItem { get; set; }
 

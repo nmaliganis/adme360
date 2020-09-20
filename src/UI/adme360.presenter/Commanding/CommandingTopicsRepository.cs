@@ -1,4 +1,4 @@
-﻿namespace dl.wm.presenter.Commanding
+﻿namespace adme360.presenter.Commanding
 {
     public sealed class CommandingTopicsRepository
     {

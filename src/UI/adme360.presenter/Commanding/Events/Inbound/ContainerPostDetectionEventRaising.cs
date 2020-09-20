@@ -1,8 +1,8 @@
-﻿using dl.wm.models.DTOs.Base;
-using dl.wm.models.DTOs.Containers;
-using dl.wm.presenter.Commanding.Servers.Base;
+﻿using adme360.models.DTOs.Base;
+using adme360.models.DTOs.Containers;
+using adme360.presenter.Commanding.Servers.Base;
 
-namespace dl.wm.presenter.Commanding.Events.Inbound
+namespace adme360.presenter.Commanding.Events.Inbound
 {
     public class ContainerPostDetectionEventRaising : IInboundEventRaisingBehavior
     {

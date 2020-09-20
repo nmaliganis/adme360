@@ -1,9 +1,9 @@
-﻿using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.view.Controls.Evts;
-using dl.wm.presenter.Base;
+﻿using adme360.presenter.Base;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.view.Controls.Evts;
 
-namespace dl.wm.presenter.ViewModel.Etvs
+namespace adme360.presenter.ViewModel.Etvs
 {
     public class UcEvtManagementPresenter : BasePresenter<IUcEvtManagementView, IVehiclesService>
     {

@@ -1,6 +1,6 @@
-﻿using dl.wm.presenter.Commanding.Events.EventArgs.Devices;
+﻿using adme360.presenter.Commanding.Events.EventArgs.Devices;
 
-namespace dl.wm.presenter.Commanding.Listeners.Devices
+namespace adme360.presenter.Commanding.Listeners.Devices
 {
     public interface IDevicePostDetectionActionListener
     {

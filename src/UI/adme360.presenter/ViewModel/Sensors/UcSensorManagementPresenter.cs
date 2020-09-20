@@ -1,14 +1,14 @@
-﻿using dl.wm.presenter.Base;
-using dl.wm.presenter.Commanding.Events.EventArgs.Devices;
-using dl.wm.presenter.Commanding.Listeners.Devices;
-using dl.wm.presenter.Commanding.Servers;
-using dl.wm.presenter.Helpers;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.presenter.Utilities;
-using dl.wm.view.Controls.Sensors;
+﻿using adme360.presenter.Base;
+using adme360.presenter.Commanding.Events.EventArgs.Devices;
+using adme360.presenter.Commanding.Listeners.Devices;
+using adme360.presenter.Commanding.Servers;
+using adme360.presenter.Helpers;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.presenter.Utilities;
+using adme360.view.Controls.Sensors;
 
-namespace dl.wm.presenter.ViewModel.Sensors
+namespace adme360.presenter.ViewModel.Sensors
 {
     public class UcSensorManagementPresenter : BasePresenter<IUcManagementSensorManagementView, IDevicesService>, 
         IDevicePutDetectionActionListener, IDevicePostDetectionActionListener

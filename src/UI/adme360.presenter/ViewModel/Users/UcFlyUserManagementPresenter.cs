@@ -1,13 +1,13 @@
 ﻿using System;
-using dl.wm.models.DTOs.Users;
-using dl.wm.presenter.Exceptions;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.presenter.Utilities;
-using dl.wm.view.Controls.Users;
-using dl.wm.presenter.Base;
+using adme360.presenter.Base;
+using adme360.models.DTOs.Users;
+using adme360.presenter.Exceptions;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.presenter.Utilities;
+using adme360.view.Controls.Users;
 
-namespace dl.wm.presenter.ViewModel.Users
+namespace adme360.presenter.ViewModel.Users
 {
     public class UcFlyUserManagementPresenter : BasePresenter<IUcFlyUserManagementView, IAccountsService>
     {

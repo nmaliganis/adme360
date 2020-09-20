@@ -1,9 +1,9 @@
-﻿using dl.wm.presenter.Base;
-using dl.wm.presenter.Helpers;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.view.Controls.Dashboards;
+﻿using adme360.presenter.Base;
+using adme360.presenter.Helpers;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.view.Controls.Dashboards;
 
-namespace dl.wm.presenter.ServiceAgents.Impls
+namespace adme360.presenter.ServiceAgents.Impls
 {
     public class MainPresenter : BasePresenter<IMainView, IDashboardService>
     {

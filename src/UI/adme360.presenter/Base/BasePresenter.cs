@@ -1,7 +1,7 @@
-﻿using dl.wm.presenter.ServiceAgents.Base;
-using dl.wm.view;
+﻿using adme360.view;
+using adme360.presenter.ServiceAgents.Base;
 
-namespace dl.wm.presenter.Base
+namespace adme360.presenter.Base
 {
     public class BasePresenter<TV,TS>
         where TV : IView 

@@ -1,4 +1,4 @@
-﻿namespace dl.wm.presenter.ServiceAgents.Base
+﻿namespace adme360.presenter.ServiceAgents.Base
 {
     public interface IService
     {

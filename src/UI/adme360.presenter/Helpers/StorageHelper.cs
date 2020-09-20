@@ -6,7 +6,7 @@ using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Blob;
 
-namespace dl.wm.presenter.Helpers
+namespace adme360.presenter.Helpers
 {
     public static class StorageHelper
     {

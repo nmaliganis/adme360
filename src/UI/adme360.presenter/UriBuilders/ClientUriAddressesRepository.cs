@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using dl.wm.presenter.UriBuilders.Factories;
-using dl.wm.presenter.Utilities;
+using adme360.presenter.UriBuilders.Factories;
+using adme360.presenter.Utilities;
 
-namespace dl.wm.presenter.UriBuilders
+namespace adme360.presenter.UriBuilders
 {
   public sealed class ClientUriAddressesRepository
   {

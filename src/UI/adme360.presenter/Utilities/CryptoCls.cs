@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace dl.wm.presenter.Utilities
+namespace adme360.presenter.Utilities
 {
     public static class CryptoCls
     {

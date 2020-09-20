@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace dl.wm.presenter.ServiceAgents.BaseProvider
+namespace adme360.presenter.ServiceAgents.BaseProvider
 {
     public interface IRequestProvider
     {

@@ -1,4 +1,4 @@
-﻿namespace dl.wm.presenter.Mqtt
+﻿namespace adme360.presenter.Mqtt
 {
     public interface IRabbitMqttConfiguration
     {

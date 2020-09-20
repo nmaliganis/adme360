@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using dl.wm.presenter.Commanding.Commands.Inbounds.Containers;
-using dl.wm.presenter.Exceptions;
+using adme360.presenter.Commanding.Commands.Inbounds.Containers;
+using adme360.presenter.Exceptions;
 
-namespace dl.wm.presenter.Commanding.Commands
+namespace adme360.presenter.Commanding.Commands
 {
     public sealed class InboundCommandBuilderRepository
     {

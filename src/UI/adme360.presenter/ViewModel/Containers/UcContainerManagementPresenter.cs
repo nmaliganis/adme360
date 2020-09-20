@@ -1,16 +1,16 @@
 ﻿using System.Linq;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.view.Controls.Containers;
-using dl.wm.presenter.Base;
-using dl.wm.presenter.Commanding.Events.EventArgs.Containers;
-using dl.wm.presenter.Commanding.Listeners;
-using dl.wm.presenter.Commanding.Listeners.Containers;
-using dl.wm.presenter.Commanding.Servers;
-using dl.wm.presenter.Helpers;
-using dl.wm.presenter.Utilities;
+using adme360.presenter.Base;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.view.Controls.Containers;
+using adme360.presenter.Commanding.Events.EventArgs.Containers;
+using adme360.presenter.Commanding.Listeners;
+using adme360.presenter.Commanding.Listeners.Containers;
+using adme360.presenter.Commanding.Servers;
+using adme360.presenter.Helpers;
+using adme360.presenter.Utilities;
 
-namespace dl.wm.presenter.ViewModel.Containers
+namespace adme360.presenter.ViewModel.Containers
 {
     public class UcContainerManagementPresenter : BasePresenter<IUcContainerManagementView, IContainersService>, 
         IContainerPutDetectionActionListener, IContainerPostDetectionActionListener

@@ -1,6 +1,6 @@
-﻿using dl.wm.models.DTOs.Devices;
+﻿using adme360.models.DTOs.Devices;
 
-namespace dl.wm.presenter.Commanding.Events.EventArgs.Devices
+namespace adme360.presenter.Commanding.Events.EventArgs.Devices
 {
     public class DeviceEventArgs : System.EventArgs
     {

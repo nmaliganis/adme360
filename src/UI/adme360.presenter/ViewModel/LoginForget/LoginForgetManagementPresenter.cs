@@ -1,10 +1,10 @@
 ﻿using System;
-using dl.wm.presenter.ServiceAgents.Contracts;
-using dl.wm.presenter.ServiceAgents.Impls;
-using dl.wm.view.Controls.LoginForget;
-using dl.wm.presenter.Base;
+using adme360.presenter.Base;
+using adme360.presenter.ServiceAgents.Contracts;
+using adme360.presenter.ServiceAgents.Impls;
+using adme360.view.Controls.LoginForget;
 
-namespace dl.wm.presenter.ViewModel.LoginForget
+namespace adme360.presenter.ViewModel.LoginForget
 {
     public class LoginForgetManagementPresenter : BasePresenter<ILoginForgetManagementView, IUsersService>
     {

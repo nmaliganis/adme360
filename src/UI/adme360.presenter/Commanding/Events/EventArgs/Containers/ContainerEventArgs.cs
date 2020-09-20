@@ -1,6 +1,6 @@
-﻿using dl.wm.models.DTOs.Containers;
+﻿using adme360.models.DTOs.Containers;
 
-namespace dl.wm.presenter.Commanding.Events.EventArgs.Containers
+namespace adme360.presenter.Commanding.Events.EventArgs.Containers
 {
     public class ContainerEventArgs : System.EventArgs
     {

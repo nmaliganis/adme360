@@ -1,6 +1,6 @@
-﻿using dl.wm.presenter.Commanding.Events.EventArgs.Containers;
+﻿using adme360.presenter.Commanding.Events.EventArgs.Containers;
 
-namespace dl.wm.presenter.Commanding.Listeners.Containers
+namespace adme360.presenter.Commanding.Listeners.Containers
 {
     public interface IContainerPutDetectionActionListener
     {

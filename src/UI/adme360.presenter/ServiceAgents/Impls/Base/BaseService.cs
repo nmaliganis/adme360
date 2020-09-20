@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using dl.wm.models.DTOs.Base;
-using dl.wm.presenter.Exceptions;
-using dl.wm.presenter.ServiceAgents.BaseProvider;
-using dl.wm.presenter.ServiceAgents.Contracts.Base;
-using dl.wm.presenter.UriBuilders;
+using adme360.models.DTOs.Base;
+using adme360.presenter.Exceptions;
+using adme360.presenter.ServiceAgents.BaseProvider;
+using adme360.presenter.ServiceAgents.Contracts.Base;
+using adme360.presenter.UriBuilders;
 
-namespace dl.wm.presenter.ServiceAgents.Impls.Base
+namespace adme360.presenter.ServiceAgents.Impls.Base
 {
   public class BaseService<TEntity> : IEntityService<TEntity> where TEntity : IUiModel
   {

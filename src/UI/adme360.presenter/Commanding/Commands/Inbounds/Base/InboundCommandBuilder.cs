@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text;
-using dl.wm.models.DTOs.Base;
+using adme360.models.DTOs.Base;
 
-namespace dl.wm.presenter.Commanding.Commands.Inbounds.Base
+namespace adme360.presenter.Commanding.Commands.Inbounds.Base
 {
     public abstract class InboundCommandBuilder
     {

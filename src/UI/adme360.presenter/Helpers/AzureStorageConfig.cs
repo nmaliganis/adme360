@@ -1,4 +1,4 @@
-﻿namespace dl.wm.presenter.Helpers
+﻿namespace adme360.presenter.Helpers
 {
     public class AzureStorageConfig
     {

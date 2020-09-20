@@ -1,15 +1,15 @@
 ﻿using System;
-using dl.wm.models.DTOs.Containers;
-using dl.wm.models.DTOs.Devices;
-using dl.wm.models.DTOs.Simcards;
-using dl.wm.presenter.Commanding.Events.EventArgs.Containers;
-using dl.wm.presenter.Commanding.Events.EventArgs.Devices;
-using dl.wm.presenter.Commanding.Events.EventArgs.Simcards;
-using dl.wm.presenter.Commanding.Listeners.Containers;
-using dl.wm.presenter.Commanding.Listeners.Devices;
-using dl.wm.presenter.Commanding.Listeners.Simcards;
+using adme360.models.DTOs.Containers;
+using adme360.models.DTOs.Devices;
+using adme360.models.DTOs.Simcards;
+using adme360.presenter.Commanding.Events.EventArgs.Containers;
+using adme360.presenter.Commanding.Events.EventArgs.Devices;
+using adme360.presenter.Commanding.Events.EventArgs.Simcards;
+using adme360.presenter.Commanding.Listeners.Containers;
+using adme360.presenter.Commanding.Listeners.Devices;
+using adme360.presenter.Commanding.Listeners.Simcards;
 
-namespace dl.wm.presenter.Commanding.Servers.Base
+namespace adme360.presenter.Commanding.Servers.Base
 {
     public abstract class CommandingInboundBaseServer
     {

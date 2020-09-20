@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace dl.wm.presenter.ServiceAgents.Base
+namespace adme360.presenter.ServiceAgents.Base
 {
     public interface IHttpClient
     {

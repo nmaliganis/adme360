@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D4D3C89-0264-4D42-B54A-0343BD3BEFD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dl.wm.presenter</RootNamespace>
+    <AssemblyName>dl-wm.presenter</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="M2Mqtt, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\M2MqttDotnetCore.1.0.8\lib\netstandard2.0\M2Mqtt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=3.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.Azure.KeyVault.Core.3.0.5\lib\net461\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.IdentityModel.JsonWebTokens.5.6.0\lib\net461\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.IdentityModel.Logging.5.6.0\lib\net461\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.IdentityModel.Tokens.5.6.0\lib\net461\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.Rest.ClientRuntime.2.3.21\lib\net461\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime.Azure, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Microsoft.Rest.ClientRuntime.Azure.3.3.19\lib\net461\Microsoft.Rest.ClientRuntime.Azure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=9.3.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\WindowsAzure.Storage.9.3.3\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.0.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\RestSharp.106.10.1\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.IdentityModel.Tokens.Jwt.5.6.0\lib\net461\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Net.NameResolution, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Net.NameResolution.4.3.0\lib\net46\System.Net.NameResolution.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Security, Version=4.0.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Net.Security.4.3.2\lib\net46\System.Net.Security.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Threading.Thread.4.3.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BasePresenter.cs" />
+    <Compile Include="Commanding\CommandingTopicsRepository.cs" />
+    <Compile Include="Commanding\Commands\Inbounds\Base\InboundCommandBuilder.cs" />
+    <Compile Include="Commanding\Commands\Inbounds\Containers\ContainerPostDetectedInboundCommandBuilder.cs" />
+    <Compile Include="Commanding\Commands\Inbounds\Containers\ContainerPostDetected.cs" />
+    <Compile Include="Commanding\Events\EventArgs\Devices\DeviceEventArgs.cs" />
+    <Compile Include="Commanding\Events\EventArgs\Simcards\SimcardEventArgs.cs" />
+    <Compile Include="Commanding\IInboundCommandBuilder.cs" />
+    <Compile Include="Commanding\Commands\InboundCommandBuilderRepository.cs" />
+    <Compile Include="Commanding\Commands\Inbounds\Base\InboundCommand.cs" />
+    <Compile Include="Commanding\Events\EventArgs\Containers\ContainerEventArgs.cs" />
+    <Compile Include="Commanding\Events\Inbound\IInboundEventRaisingBehavior.cs" />
+    <Compile Include="Commanding\Events\Inbound\ContainerPostDetectionEventRaising.cs" />
+    <Compile Include="Commanding\Listeners\Containers\IContainerPostDetectionActionListener.cs" />
+    <Compile Include="Commanding\Listeners\Containers\IContainerPutDetectionActionListener.cs" />
+    <Compile Include="Commanding\Listeners\Devices\IDevicePostDetectionActionListener.cs" />
+    <Compile Include="Commanding\Listeners\Devices\IDevicePutDetectionActionListener.cs" />
+    <Compile Include="Commanding\Listeners\Simcards\ISimcardPostDetectionActionListener.cs" />
+    <Compile Include="Commanding\Listeners\Simcards\ISimcardPutDetectionActionListener.cs" />
+    <Compile Include="Commanding\Servers\Base\CommandingInboundBaseServer.cs" />
+    <Compile Include="Commanding\Servers\CommandingInboundServer.cs" />
+    <Compile Include="Consts\ConstVariables.cs" />
+    <Compile Include="Exceptions\CommandsBuilders\CommandNotFoundException.cs" />
+    <Compile Include="Exceptions\ServiceAuthenticationException.cs" />
+    <Compile Include="Exceptions\ServiceHttpRequestException.cs" />
+    <Compile Include="Exceptions\ServiceParseException.cs" />
+    <Compile Include="Exceptions\UserJwts\BadRequestForUserJwtWasCatch.cs" />
+    <Compile Include="Helpers\JwtHelper.cs" />
+    <Compile Include="Helpers\StorageHelper.cs" />
+    <Compile Include="Helpers\AzureStorageConfig.cs" />
+    <Compile Include="Helpers\Messages.cs" />
+    <Compile Include="Mqtt\RabbitMqConfiguration.cs" />
+    <Compile Include="Mqtt\RabbitMqttConfiguration.cs" />
+    <Compile Include="Mqtt\IRabbitMqttConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceAgents\BaseProvider\RequestProvider.cs" />
+    <Compile Include="ServiceAgents\BaseProvider\IRequestProvider.cs" />
+    <Compile Include="ServiceAgents\Base\IHttpClient.cs" />
+    <Compile Include="ServiceAgents\Base\IService.cs" />
+    <Compile Include="ServiceAgents\Contracts\Base\IEntityService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IDevicesService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IDashboardService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IEmployeeRolesService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IAccountsService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IEmployeesService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IMainService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IRoutesService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IMapService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IFirmwaresService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IToursService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IUserJwtService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IUserRolesService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IUsersService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IDepartmentsService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IContainersService.cs" />
+    <Compile Include="ServiceAgents\Contracts\ITrackablesService.cs" />
+    <Compile Include="ServiceAgents\Contracts\ISimcardsService.cs" />
+    <Compile Include="ServiceAgents\Contracts\IVehiclesService.cs" />
+    <Compile Include="ServiceAgents\Impls\DevicesService.cs" />
+    <Compile Include="ServiceAgents\Impls\MainService.cs" />
+    <Compile Include="ServiceAgents\Impls\MainPresenter.cs" />
+    <Compile Include="ServiceAgents\Impls\RoutesService.cs" />
+    <Compile Include="ServiceAgents\Impls\MapService.cs" />
+    <Compile Include="ServiceAgents\Impls\DashboardService.cs" />
+    <Compile Include="ServiceAgents\Impls\Base\BaseService.cs" />
+    <Compile Include="ServiceAgents\Impls\FirmwaresService.cs" />
+    <Compile Include="ServiceAgents\Impls\ToursService.cs" />
+    <Compile Include="ServiceAgents\Impls\UserJwtService.cs" />
+    <Compile Include="ServiceAgents\Impls\UserRolesService.cs" />
+    <Compile Include="ServiceAgents\Impls\AccountsService.cs" />
+    <Compile Include="ServiceAgents\Impls\UsersService.cs" />
+    <Compile Include="ServiceAgents\Impls\EmployeesService.cs" />
+    <Compile Include="ServiceAgents\Impls\DepartmentsService.cs" />
+    <Compile Include="ServiceAgents\Impls\EmployeeRolesService.cs" />
+    <Compile Include="ServiceAgents\Impls\ContainersService.cs" />
+    <Compile Include="ServiceAgents\Impls\TrackablesService.cs" />
+    <Compile Include="ServiceAgents\Impls\SimcardsService.cs" />
+    <Compile Include="ServiceAgents\Impls\VehiclesService.cs" />
+    <Compile Include="UriBuilders\ApiFactories\FirmwareUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\SimcardUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\DeviceUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\MainUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\EmployeeUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\MapUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\DashboardUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\AccountUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\Base\BaseClientUri.cs" />
+    <Compile Include="UriBuilders\ApiFactories\RoutesUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\TourUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\UserUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\UserRoleUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\UserJwtUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\EmployeeRoleUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\DepartmentUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\ContainerUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\TrackableUriAddr.cs" />
+    <Compile Include="UriBuilders\ApiFactories\VehicleUriAddr.cs" />
+    <Compile Include="UriBuilders\ClientUriAddressesRepository.cs" />
+    <Compile Include="UriBuilders\Factories\ClientFirmwareUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientSimcardUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientDeviceUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientMainUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientEmployeeUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientMapUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientDashboardUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientAccountUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientRoutesUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientTourUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientUserRoleUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientUserJwtUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientUserUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientDepartmentUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientEmployeeRoleUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientContainerUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientTrackableUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\ClientVehicleUriFactory.cs" />
+    <Compile Include="UriBuilders\Factories\IClientUriFactory.cs" />
+    <Compile Include="Utilities\ClientSettingsSingleton.cs" />
+    <Compile Include="Utilities\CryptoCls.cs" />
+    <Compile Include="Utilities\RegistryEditCls.cs" />
+    <Compile Include="ViewModel\Configurations\UcConfigurationManagementPresenter.cs" />
+    <Compile Include="ViewModel\Containers\ContainerImagePresenter.cs" />
+    <Compile Include="ViewModel\Containers\ContainerPointsPresenter.cs" />
+    <Compile Include="ViewModel\Containers\UcFlyContainerManagementPresenter.cs" />
+    <Compile Include="ViewModel\Containers\UcContainerManagementPresenter.cs" />
+    <Compile Include="ViewModel\Containers\ContainerManagementPresenter.cs" />
+    <Compile Include="ViewModel\Containers\ContainersPresenter.cs" />
+    <Compile Include="ViewModel\Containers\UcMonitoringContainerManagementPresenter.cs" />
+    <Compile Include="ViewModel\Dashboards\DashboardManagementPresenter.cs" />
+    <Compile Include="ViewModel\Employees\Departments\DepartmentsPresenter.cs" />
+    <Compile Include="ViewModel\Employees\Departments\EmployeeRoleManagementPresenter.cs" />
+    <Compile Include="ViewModel\Employees\EmployeeRoles\EmployeeRolesPresenter.cs" />
+    <Compile Include="ViewModel\Employees\EmployeeRoles\EmployeeRoleManagementPresenter.cs" />
+    <Compile Include="ViewModel\Employees\EmployeesPresenter.cs" />
+    <Compile Include="ViewModel\Etvs\UcEvtEmployeeManagementPresenter.cs" />
+    <Compile Include="ViewModel\Etvs\UcEvtManagementPresenter.cs" />
+    <Compile Include="ViewModel\Firmwares\FirmwaresPresenter.cs" />
+    <Compile Include="ViewModel\LoginForget\LoginForgetManagementPresenter.cs" />
+    <Compile Include="ViewModel\Maps\MapPresenter.cs" />
+    <Compile Include="ViewModel\Maps\MapManagementPresenter.cs" />
+    <Compile Include="ViewModel\Routes\UcRoutesManagementPresenter.cs" />
+    <Compile Include="ViewModel\Sensors\UcSensorMonitoringManagementPresenter.cs" />
+    <Compile Include="ViewModel\Sensors\UcSensorManagementPresenter.cs" />
+    <Compile Include="ViewModel\Sensors\SensorManagementPresenter.cs" />
+    <Compile Include="ViewModel\Sensors\DevicesPresenter.cs" />
+    <Compile Include="ViewModel\Sensors\UcFlySensorManagementPresenter.cs" />
+    <Compile Include="ViewModel\Simcards\UcFlySimcardManagementPresenter.cs" />
+    <Compile Include="ViewModel\Simcards\SimcardsPresenter.cs" />
+    <Compile Include="ViewModel\Simcards\UcSimcardManagementPresenter.cs" />
+    <Compile Include="ViewModel\Tours\TourManagementPresenter.cs" />
+    <Compile Include="ViewModel\Tours\ToursPresenter.cs" />
+    <Compile Include="ViewModel\Trackables\TrackableManagementPresenter.cs" />
+    <Compile Include="ViewModel\Trackables\TrackablesPresenter.cs" />
+    <Compile Include="ViewModel\UserJwt\AuthJwtPresenter.cs" />
+    <Compile Include="ViewModel\Users\Roles\UcUserRoleManagementPresenter.cs" />
+    <Compile Include="ViewModel\Users\Roles\FoUserRoleManagementPresenter.cs" />
+    <Compile Include="ViewModel\Users\Roles\UserRolesPresenter.cs" />
+    <Compile Include="ViewModel\Users\UcFlyUserManagementPresenter.cs" />
+    <Compile Include="ViewModel\Users\UsersPresenter.cs" />
+    <Compile Include="ViewModel\Users\UcUserManagementPresenter.cs" />
+    <Compile Include="ViewModel\Users\UserManagementPresenter.cs" />
+    <Compile Include="ViewModel\Vehicles\VehicleManagementPresenter.cs" />
+    <Compile Include="ViewModel\Vehicles\VehiclesPresenter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dl-wm.models\dl-wm.models.csproj">
+      <Project>{7826C3AE-0845-48BB-9C8F-F0BB6A46F325}</Project>
+      <Name>dl-wm.models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dl-wm.view\dl-wm.view.csproj">
+      <Project>{5AB8313A-C6C5-4480-A983-A70A2FD84D16}</Project>
+      <Name>dl-wm.view</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\..\..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\..\..\..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\NETStandard.Library.2.0.0\build\netstandard2.0\NETStandard.Library.targets'))" />
+  </Target>
+</Project>

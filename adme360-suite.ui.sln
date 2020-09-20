@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adme360.models", "src\UI\adme360.models\adme360.models.csproj", "{7826C3AE-0845-48BB-9C8F-F0BB6A46F325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adme360.view", "src\UI\adme360.view\adme360.view.csproj", "{5AB8313A-C6C5-4480-A983-A70A2FD84D16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7826C3AE-0845-48BB-9C8F-F0BB6A46F325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7826C3AE-0845-48BB-9C8F-F0BB6A46F325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7826C3AE-0845-48BB-9C8F-F0BB6A46F325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7826C3AE-0845-48BB-9C8F-F0BB6A46F325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AB8313A-C6C5-4480-A983-A70A2FD84D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AB8313A-C6C5-4480-A983-A70A2FD84D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AB8313A-C6C5-4480-A983-A70A2FD84D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AB8313A-C6C5-4480-A983-A70A2FD84D16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95C22753-5185-48B9-A60E-1E7327B6C756}
+	EndGlobalSection
+EndGlobal

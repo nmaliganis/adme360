@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AB8313A-C6C5-4480-A983-A70A2FD84D16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>adme360.view</RootNamespace>
+    <AssemblyName>adme360.view</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Net.Http.4.3.3\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\System.Security.Cryptography.X509Certificates.4.3.1\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commons\LogMsgType.cs" />
+    <Compile Include="Controls\Configurations\IUcCnfigurationManagementView.cs" />
+    <Compile Include="Controls\Containers\AddEditFlyoutContainer\IUcFlyContainerManagementView.cs" />
+    <Compile Include="Controls\Containers\IContainerImageView.cs" />
+    <Compile Include="Controls\Containers\IContainersPointsView.cs" />
+    <Compile Include="Controls\Containers\IUcContainerManagementView.cs" />
+    <Compile Include="Controls\Containers\IContainersView.cs" />
+    <Compile Include="Controls\Containers\IContainerView.cs" />
+    <Compile Include="Controls\Containers\IContainerManagementView.cs" />
+    <Compile Include="Controls\Containers\IUcMonitoringContainerManagementView.cs" />
+    <Compile Include="Controls\Customers\ICustomerManagementView.cs" />
+    <Compile Include="Controls\Customers\ICustomersView.cs" />
+    <Compile Include="Controls\Customers\ICustomerView.cs" />
+    <Compile Include="Controls\Dashboards\IDashboardManagementView.cs" />
+    <Compile Include="Controls\Dashboards\IMainView.cs" />
+    <Compile Include="Controls\Dashboards\Maps\IMapManagementView.cs" />
+    <Compile Include="Controls\Employees\Departments\IEmployeeDepartmentManagementView.cs" />
+    <Compile Include="Controls\Employees\EmployeeRoles\IEmployeeRoleManagementView.cs" />
+    <Compile Include="Controls\Employees\IEmployeesView.cs" />
+    <Compile Include="Controls\Evts\IUcEvtEmployeeManagementView.cs" />
+    <Compile Include="Controls\Evts\IUcEvtManagementView.cs" />
+    <Compile Include="Controls\Firmwares\IFirmwaresView.cs" />
+    <Compile Include="Controls\LoginForget\ILoginForgetManagementView.cs" />
+    <Compile Include="Controls\LoginForget\IAuthJwtView.cs" />
+    <Compile Include="Controls\Employees\Departments\IDepartmentsView.cs" />
+    <Compile Include="Controls\Employees\EmployeeRoles\IEmployeeRolesView.cs" />
+    <Compile Include="Controls\Maps\IMapView.cs" />
+    <Compile Include="Controls\Routes\IUcRoutesManagementView.cs" />
+    <Compile Include="Controls\Sensors\ISensorManagementView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorManagementView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorMeasurementHistoryView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorMeasurementRealTimeView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorModelManagementView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorMonitoringView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorSettingsCalibrationView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorSettingsCommandsView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorSettingsFirmwareView.cs" />
+    <Compile Include="Controls\Sensors\IUcManagementSensorSettingsSimcardView.cs" />
+    <Compile Include="Controls\Sensors\IDevicesView.cs" />
+    <Compile Include="Controls\Simcards\AddEditFlyoutSimcard\IUcFlyContainerManagementView.cs" />
+    <Compile Include="Controls\Sensors\AddEditFlyoutSensor\IUcFlySensorManagementView.cs" />
+    <Compile Include="Controls\Simcards\ISimcardsView.cs" />
+    <Compile Include="Controls\Tours\ITourManagementView.cs" />
+    <Compile Include="Controls\Tours\IToursView.cs" />
+    <Compile Include="Controls\Users\IUcFlyUserManagementView.cs" />
+    <Compile Include="Controls\Users\IUserManagementView.cs" />
+    <Compile Include="Controls\Users\IUsersView.cs" />
+    <Compile Include="Controls\Users\IUcUserManagementView.cs" />
+    <Compile Include="Controls\Users\Roles\IUserRolesView.cs" />
+    <Compile Include="Controls\Users\Roles\IUcUserRoleManagementView.cs" />
+    <Compile Include="Controls\Users\Roles\IFoUserRoleManagementView.cs" />
+    <Compile Include="Controls\Trackables\ITrackableManagementView.cs" />
+    <Compile Include="Controls\Trackables\ITrackablesView.cs" />
+    <Compile Include="Controls\Vehicles\IVehicleManagementView.cs" />
+    <Compile Include="Controls\Vehicles\IVehiclesView.cs" />
+    <Compile Include="Controls\IModuleManagementView.cs" />
+    <Compile Include="IMsgView.cs" />
+    <Compile Include="IView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\adme360.models\adme360.models.csproj">
+      <Project>{7826C3AE-0845-48BB-9C8F-F0BB6A46F325}</Project>
+      <Name>dl-wm.models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

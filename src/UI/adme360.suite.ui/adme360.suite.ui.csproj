@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6FF75B22-00E9-439F-84BB-76988F877CD2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>adme360.suite.ui</RootNamespace>
+    <AssemblyName>adme360.suite.ui</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>E:\1.Projects\13.dl\dl-wm-suite.ng\deploys\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_recycle_bin.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>45B7AAE14067F32A2A397EC5FAD3205F52BD2AE8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>dl-wm-suite.ui_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Mvvm.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Win, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Reporting.Extensions, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraWizard.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\BaseModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Components\Containers\UcClientsMonitoringContainers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Containers\UcClientsMonitoringContainers.designer.cs">
+      <DependentUpon>UcClientsMonitoringContainers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Containers\UcClientsManagementContainers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Containers\UcClientsManagementContainers.designer.cs">
+      <DependentUpon>UcClientsManagementContainers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsTours.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsTours.designer.cs">
+      <DependentUpon>UcClientsTours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsHistoryTours.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsHistoryTours.designer.cs">
+      <DependentUpon>UcClientsHistoryTours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsEmployeesTours.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsEmployeesTours.designer.cs">
+      <DependentUpon>UcClientsEmployeesTours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsPos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsPos.designer.cs">
+      <DependentUpon>UcClientsPos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsVehicles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsVehicles.designer.cs">
+      <DependentUpon>UcClientsVehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\EmployeesToursVehicles\UcClientsEmployees.designer.cs">
+      <DependentUpon>UcClientsEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsManagementSensorModels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsManagementSensorModels.designer.cs">
+      <DependentUpon>UcClientsManagementSensorModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsSettingsCommandsSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsSettingsCommandsSensors.designer.cs">
+      <DependentUpon>UcClientsSettingsCommandsSensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsSettingsFirmwareSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsSettingsFirmwareSensors.designer.cs">
+      <DependentUpon>UcClientsSettingsFirmwareSensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsSettingsCalibrationSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsSettingsCalibrationSensors.designer.cs">
+      <DependentUpon>UcClientsSettingsCalibrationSensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsSettingsSimcardSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsSettingsSimcardSensors.designer.cs">
+      <DependentUpon>UcClientsSettingsSimcardSensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsMeasurementRealTimeSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsMeasurementRealTimeSensors.designer.cs">
+      <DependentUpon>UcClientsMeasurementRealTimeSensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsMeasurementHistorySensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsMeasurementHistorySensors.designer.cs">
+      <DependentUpon>UcClientsMeasurementHistorySensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsMonitoringSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsMonitoringSensors.designer.cs">
+      <DependentUpon>UcClientsMonitoringSensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsManagementSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\Sensors\UcClientsManagementSensors.designer.cs">
+      <DependentUpon>UcClientsManagementSensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\UcClientsDicom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\UcClientsDicom.designer.cs">
+      <DependentUpon>UcClientsDicom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\UcSettingsDicom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\UcSettingsDicom.designer.cs">
+      <DependentUpon>UcSettingsDicom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\UcSettingsLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\UcSettingsLabel.designer.cs">
+      <DependentUpon>UcSettingsLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\UsersRolesDepartments\UcClientsEmployeeRoles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\UsersRolesDepartments\UcClientsEmployeeRoles.designer.cs">
+      <DependentUpon>UcClientsEmployeeRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\UsersRolesDepartments\UcClientsRoles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\UsersRolesDepartments\UcClientsRoles.designer.cs">
+      <DependentUpon>UcClientsRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\UsersRolesDepartments\UcClientsUserDepartments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\UsersRolesDepartments\UcClientsUserDepartments.designer.cs">
+      <DependentUpon>UcClientsUserDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Components\UsersRolesDepartments\UcClientsUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Components\UsersRolesDepartments\UcClientsUsers.designer.cs">
+      <DependentUpon>UcClientsUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditSensor\UcFlySensorAddNewEditSensorManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditSensor\UcFlySensorAddNewEditSensorManagement.Designer.cs">
+      <DependentUpon>UcFlySensorAddNewEditSensorManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditSimcard\UcFlySimcardAddNewEditSimcardManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditSimcard\UcFlySimcardAddNewEditSimcardManagement.Designer.cs">
+      <DependentUpon>UcFlySimcardAddNewEditSimcardManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditContainer\UcFlyContainerAddNewEditContainerManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditContainer\UcFlyContainerAddNewEditContainerManagement.Designer.cs">
+      <DependentUpon>UcFlyContainerAddNewEditContainerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditUser\UcFlyUserAddNewEditUserManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditUser\UcFlyUserAddNewEditUserManagement.Designer.cs">
+      <DependentUpon>UcFlyUserAddNewEditUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\LoginRegister\UcFlyLoginForget.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\LoginRegister\UcFlyLoginForget.Designer.cs">
+      <DependentUpon>UcFlyLoginForget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditRole\UcFlyRoleManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditRole\UcFlyRoleManagement.Designer.cs">
+      <DependentUpon>UcFlyRoleManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\LoginRegister\Ucs\UcSuccessLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\LoginRegister\Ucs\UcSuccessLogin.Designer.cs">
+      <DependentUpon>UcSuccessLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\LoginRegister\Ucs\UcErrorLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\LoginRegister\Ucs\UcErrorLogin.Designer.cs">
+      <DependentUpon>UcErrorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\UcFlyOnDemandCommand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\UcFlyOnDemandCommand.Designer.cs">
+      <DependentUpon>UcFlyOnDemandCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditEmployee\UcFlyEvtAddNewEditEmployeeManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FlyOuts\AddEditEmployee\UcFlyEvtAddNewEditEmployeeManagement.Designer.cs">
+      <DependentUpon>UcFlyEvtAddNewEditEmployeeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Helpers\DashboardCustomClusterFactory.cs" />
+    <Compile Include="Views\Modules\Clustering\CustomClusterItemFactory.cs" />
+    <Compile Include="Views\Modules\Clustering\CustomClusterFactory.cs" />
+    <Compile Include="Views\Modules\UcAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcAccount.Designer.cs">
+      <DependentUpon>UcAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcVehicles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcVehicles.Designer.cs">
+      <DependentUpon>UcVehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcSensors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcSensors.Designer.cs">
+      <DependentUpon>UcSensors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcNotifications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcNotifications.Designer.cs">
+      <DependentUpon>UcNotifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcRoutes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcRoutes.Designer.cs">
+      <DependentUpon>UcRoutes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcEmployee.Designer.cs">
+      <DependentUpon>UcEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcUsers.Designer.cs">
+      <DependentUpon>UcUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcReports.Designer.cs">
+      <DependentUpon>UcReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcDashboard.Designer.cs">
+      <DependentUpon>UcDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcConfiguration.designer.cs">
+      <DependentUpon>UcConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcContainers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcContainers.Designer.cs">
+      <DependentUpon>UcContainers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modules\UcAnalytics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Modules\UcAnalytics.Designer.cs">
+      <DependentUpon>UcAnalytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Repositories\ModuleSensorViewRepository.cs" />
+    <Compile Include="Views\Repositories\ModuleContainerViewRepository.cs" />
+    <Compile Include="Views\Repositories\ModuleUserRoleViewRepository.cs" />
+    <Compile Include="Views\Repositories\ModuleManagementViewRepository.cs" />
+    <Compile Include="Views\Repositories\ModuleViewRepository.cs" />
+    <Compile Include="Views\Wizards\WizardNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Wizards\WizardNetwork.designer.cs">
+      <DependentUpon>WizardNetwork.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\BaseModule.resx">
+      <DependentUpon>BaseModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Components\Containers\UcClientsMonitoringContainers.resx">
+      <DependentUpon>UcClientsMonitoringContainers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Containers\UcClientsManagementContainers.resx">
+      <DependentUpon>UcClientsManagementContainers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\EmployeesToursVehicles\UcClientsTours.resx">
+      <DependentUpon>UcClientsTours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\EmployeesToursVehicles\UcClientsHistoryTours.resx">
+      <DependentUpon>UcClientsHistoryTours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\EmployeesToursVehicles\UcClientsEmployeesTours.resx">
+      <DependentUpon>UcClientsEmployeesTours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\EmployeesToursVehicles\UcClientsPos.resx">
+      <DependentUpon>UcClientsPos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\EmployeesToursVehicles\UcClientsVehicles.resx">
+      <DependentUpon>UcClientsVehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\EmployeesToursVehicles\UcClientsEmployees.resx">
+      <DependentUpon>UcClientsEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsManagementSensorModels.resx">
+      <DependentUpon>UcClientsManagementSensorModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsSettingsCommandsSensors.resx">
+      <DependentUpon>UcClientsSettingsCommandsSensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsSettingsFirmwareSensors.resx">
+      <DependentUpon>UcClientsSettingsFirmwareSensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsSettingsCalibrationSensors.resx">
+      <DependentUpon>UcClientsSettingsCalibrationSensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsSettingsSimcardSensors.resx">
+      <DependentUpon>UcClientsSettingsSimcardSensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsMeasurementRealTimeSensors.resx">
+      <DependentUpon>UcClientsMeasurementRealTimeSensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsMeasurementHistorySensors.resx">
+      <DependentUpon>UcClientsMeasurementHistorySensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsMonitoringSensors.resx">
+      <DependentUpon>UcClientsMonitoringSensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\Sensors\UcClientsManagementSensors.resx">
+      <DependentUpon>UcClientsManagementSensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\UcClientsDicom.resx">
+      <DependentUpon>UcClientsDicom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\UcSettingsDicom.resx">
+      <DependentUpon>UcSettingsDicom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\UcSettingsLabel.resx">
+      <DependentUpon>UcSettingsLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\UsersRolesDepartments\UcClientsEmployeeRoles.resx">
+      <DependentUpon>UcClientsEmployeeRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\UsersRolesDepartments\UcClientsRoles.resx">
+      <DependentUpon>UcClientsRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\UsersRolesDepartments\UcClientsUserDepartments.resx">
+      <DependentUpon>UcClientsUserDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Components\UsersRolesDepartments\UcClientsUsers.resx">
+      <DependentUpon>UcClientsUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\AddEditSensor\UcFlySensorAddNewEditSensorManagement.resx">
+      <DependentUpon>UcFlySensorAddNewEditSensorManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\AddEditSimcard\UcFlySimcardAddNewEditSimcardManagement.resx">
+      <DependentUpon>UcFlySimcardAddNewEditSimcardManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\AddEditContainer\UcFlyContainerAddNewEditContainerManagement.resx">
+      <DependentUpon>UcFlyContainerAddNewEditContainerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\AddEditUser\UcFlyUserAddNewEditUserManagement.resx">
+      <DependentUpon>UcFlyUserAddNewEditUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\LoginRegister\UcFlyLoginForget.resx">
+      <DependentUpon>UcFlyLoginForget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\AddEditRole\UcFlyRoleManagement.resx">
+      <DependentUpon>UcFlyRoleManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\LoginRegister\Ucs\UcSuccessLogin.resx">
+      <DependentUpon>UcSuccessLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\LoginRegister\Ucs\UcErrorLogin.resx">
+      <DependentUpon>UcErrorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\UcFlyOnDemandCommand.resx">
+      <DependentUpon>UcFlyOnDemandCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FlyOuts\AddEditEmployee\UcFlyEvtAddNewEditEmployeeManagement.resx">
+      <DependentUpon>UcFlyEvtAddNewEditEmployeeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcAccount.resx">
+      <DependentUpon>UcAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcVehicles.resx">
+      <DependentUpon>UcVehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcSensors.resx">
+      <DependentUpon>UcSensors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcNotifications.resx">
+      <DependentUpon>UcNotifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcRoutes.resx">
+      <DependentUpon>UcRoutes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcEmployee.resx">
+      <DependentUpon>UcEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcUsers.resx">
+      <DependentUpon>UcUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcReports.resx">
+      <DependentUpon>UcReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcDashboard.resx">
+      <DependentUpon>UcDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcConfiguration.resx">
+      <DependentUpon>UcConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcContainers.resx">
+      <DependentUpon>UcContainers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modules\UcAnalytics.resx">
+      <DependentUpon>UcAnalytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Wizards\WizardNetwork.resx">
+      <DependentUpon>WizardNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="0.Docs\ReadMe.md" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_waste_p2_162.png" />
+    <None Include="Resources\icons8_full_trash_161.png" />
+    <None Include="Resources\icons8_marker_162.png" />
+    <None Include="Resources\icons8_smoke_detector_323.png" />
+    <None Include="Resources\icons8_data_matrix_code_32.png" />
+    <None Include="Resources\icons8_natural_user_interface_2_162.png" />
+    <None Include="Resources\icons8_data_matrix_code_16.png" />
+    <None Include="Resources\icons8_binary_file_161.png" />
+    <None Include="Resources\icons8_barcode_scanner_162.png" />
+    <None Include="Resources\icons8_ubuntu_32.png" />
+    <None Include="Resources\icons8_sim_card2_321.png" />
+    <None Include="Resources\icons8_waste_p1_32.png" />
+    <None Include="Resources\icons8_microsoft_excel_32.png" />
+    <None Include="Resources\icons8_ubuntu_162.png" />
+    <None Include="Resources\icons8_ubuntu_161.png" />
+    <None Include="Resources\icons8_1_track_order_161.png" />
+    <None Include="Resources\icons8_32-bit_163.png" />
+    <None Include="Resources\icons8_temperature_sensitive_16.png" />
+    <None Include="Resources\icons8_1_track_order_16.png" />
+    <None Include="Resources\icons8_waste_p2_161.png" />
+    <None Include="Resources\icons8_waste_p1_161.png" />
+    <None Include="Resources\icons8_radio_tower_161.png" />
+    <None Include="Resources\icons8_electronics_161.png" />
+    <None Include="Resources\icons8_smoke_detector_161.png" />
+    <None Include="Resources\icons8_natural_user_interface_2_161.png" />
+    <None Include="Resources\icons8_calendar_25_161.png" />
+    <None Include="Resources\icons8_phone2_162.png" />
+    <None Include="Resources\icons8_around_the_globe2_161.png" />
+    <None Include="Resources\icons8_chip_card_161.png" />
+    <None Include="Resources\icons8_sim_card2_161.png" />
+    <None Include="Resources\icons8_sim_card2_32.png" />
+    <None Include="Resources\icons8_ok_32.png" />
+    <None Include="Resources\icons8_next_page_321.png" />
+    <None Include="Resources\icons8_sync_32.png" />
+    <None Include="Resources\icons8_reset_32.png" />
+    <None Include="Resources\icons8_ok_16.png" />
+    <None Include="Resources\icons8_radio_tower_16.png" />
+    <None Include="Resources\icons8_electronics_16.png" />
+    <None Include="Resources\icons8_calendar_25_16.png" />
+    <None Include="Resources\icons8_calendar_1_16.png" />
+    <None Include="Resources\icons8_phone2_161.png" />
+    <None Include="Resources\icons8_around_the_globe2_16.png" />
+    <None Include="Resources\icons8_smoke_detector_16.png" />
+    <None Include="Resources\icons8_sim_card2_16.png" />
+    <None Include="Resources\icons8_chip_card1_16.png" />
+    <None Include="Resources\icons8_csv_32.png" />
+    <None Include="Resources\icons8_hashtag_large_1610.png" />
+    <None Include="Resources\icons8_binary_file_32.png" />
+    <None Include="Resources\icons8_barcode_scanner_161.png" />
+    <None Include="Resources\icons8_ubuntu_16.png" />
+    <None Include="Resources\icons8_32-bit_162.png" />
+    <None Include="Resources\icons8_hashtag_large_169.png" />
+    <None Include="Resources\icons8_natural_user_interface_2_16.png" />
+    <None Include="Resources\icons8_binary_file_16.png" />
+    <None Include="Resources\icons8_barcode_scanner_16.png" />
+    <None Include="Resources\icons8_hashtag_large_168.png" />
+    <None Include="Resources\icons8_32-bit_161.png" />
+    <None Include="Resources\icons8_32-bit_16.png" />
+    <None Include="Resources\icons8_hashtag_large_167.png" />
+    <None Include="Resources\icons8_information_32.png" />
+    <None Include="Resources\icons8_rfid_signal_161.png" />
+    <None Include="Resources\icons8_rfid_signal_16.png" />
+    <None Include="Resources\icons8_smoke_detector_322.png" />
+    <None Include="Resources\icons8_smoke_detector_321.png" />
+    <None Include="Resources\icons8_code_16.png" />
+    <None Include="Resources\icons8_bug_16.png" />
+    <None Include="Resources\icons8_sergeant_first_class_sfc_16.png" />
+    <None Include="Resources\icons8_chip_card_16.png" />
+    <None Include="Resources\icons8_settings_32.png" />
+    <None Include="Resources\icons8_time_16.png" />
+    <None Include="Resources\icons8_historical_16.png" />
+    <None Include="Resources\icons8_temperature_sensitive_32.png" />
+    <None Include="Resources\icons8_thermometer_automation_16.png" />
+    <None Include="Resources\icons8_dashboard_162.png" />
+    <None Include="Resources\icons8_smoke_detector_32.png" />
+    <None Include="Resources\icons8_smartphone_tablet_16.png" />
+    <None Include="Resources\icons8_smartphone_tablet_321.png" />
+    <None Include="Resources\icons8_smartphone_tablet_32.png" />
+    <None Include="Resources\icons8_1_track_order_32.png" />
+    <None Include="Resources\icons8_itinerary_322.png" />
+    <None Include="Resources\icons8_itinerary_321.png" />
+    <None Include="Resources\icons8_itinerary_32.png" />
+    <None Include="Resources\icons8_hashtag_large_166.png" />
+    <None Include="Resources\icons8_battery_161.png" />
+    <None Include="Resources\icons8_weight_16.png" />
+    <None Include="Resources\icons8_battery_level_16.png" />
+    <None Include="Resources\icons8_battery_level_32.png" />
+    <None Include="Resources\icons8_gender_161.png" />
+    <None Include="Resources\icons8_hashtag_large_165.png" />
+    <None Include="Resources\icons8_administrator_male_161.png" />
+    <None Include="Resources\icons8_phone2_16.png" />
+    <None Include="Resources\icons8_telephone_16.png" />
+    <None Include="Resources\icons8_zip_code_161.png" />
+    <None Include="Resources\icons8_email_162.png" />
+    <None Include="Resources\icons8_identification_documents_165.png" />
+    <None Include="Resources\icons8_identification_documents2_165.png" />
+    <None Include="Resources\icons8_worker_321.png" />
+    <None Include="Resources\info_323.png" />
+    <None Include="Resources\info_322.png" />
+    <None Include="Resources\icons8_text_box_16.png" />
+    <None Include="Resources\icons8_text_box_32.png" />
+    <None Include="Resources\icons8_leather_16.png" />
+    <None Include="Resources\hashtag_large.svg" />
+    <None Include="Resources\green.svg" />
+    <None Include="Resources\gray.svg" />
+    <None Include="Resources\gps_antenna.svg" />
+    <None Include="Resources\geofence_orange.svg" />
+    <None Include="Resources\geofence_black.svg" />
+    <None Include="Resources\add_trash.svg" />
+    <None Include="Resources\adventure.svg" />
+    <None Include="Resources\battery.svg" />
+    <None Include="Resources\black.svg" />
+    <None Include="Resources\blue.svg" />
+    <None Include="Resources\clear_filters.svg" />
+    <None Include="Resources\delete_trash.svg" />
+    <None Include="Resources\disposal.svg" />
+    <None Include="Resources\filter.svg" />
+    <None Include="Resources\filter_edit.svg" />
+    <None Include="Resources\garbage_truck.svg" />
+    <None Include="Resources\garbage_truck2.svg" />
+    <None Include="Resources\zoom_to_actual_size.svg" />
+    <None Include="Resources\zoom_out.svg" />
+    <None Include="Resources\zoom_in.svg" />
+    <None Include="Resources\yellow.svg" />
+    <None Include="Resources\world_map.svg" />
+    <None Include="Resources\waypoint_map.svg" />
+    <None Include="Resources\waste5.svg" />
+    <None Include="Resources\waste3.svg" />
+    <None Include="Resources\waste2.svg" />
+    <None Include="Resources\waste1.svg" />
+    <None Include="Resources\waste_sorting2.svg" />
+    <None Include="Resources\waste_sorting_black.svg" />
+    <None Include="Resources\waste_sorting.svg" />
+    <None Include="Resources\waste_separation.svg" />
+    <None Include="Resources\waste_black.svg" />
+    <None Include="Resources\waste_2sorting.svg" />
+    <None Include="Resources\waste.svg" />
+    <None Include="Resources\vox_player.svg" />
+    <None Include="Resources\track_order3.svg" />
+    <None Include="Resources\track_order2.svg" />
+    <None Include="Resources\track_order.svg" />
+    <None Include="Resources\search.svg" />
+    <None Include="Resources\route.svg" />
+    <None Include="Resources\red.svg" />
+    <None Include="Resources\recycle3.svg" />
+    <None Include="Resources\recycle2.svg" />
+    <None Include="Resources\recycle_black.svg" />
+    <None Include="Resources\private_lock_black.svg" />
+    <None Include="Resources\private_lock.svg" />
+    <None Include="Resources\place_marker.svg" />
+    <None Include="Resources\orange.svg" />
+    <None Include="Resources\map_pin.svg" />
+    <None Include="Resources\map_black.svg" />
+    <None Include="Resources\map.svg" />
+    <None Include="Resources\lock.svg" />
+    <None Include="Resources\location.svg" />
+    <None Include="Resources\journey.svg" />
+    <None Include="Resources\lock1.svg" />
+    <None Include="Resources\geofence_orange1.svg" />
+    <None Include="Resources\waste21.svg" />
+    <None Include="Resources\icons8_marker_161.png" />
+    <None Include="Resources\icons8_wednesday_161.png" />
+    <None Include="Resources\icons8_waste_m7_16.png" />
+    <None Include="Resources\icons8_hashtag_large_164.png" />
+    <None Include="Resources\icons8_waste_p2_16.png" />
+    <None Include="Resources\icons8_dashboard_161.png" />
+    <None Include="Resources\icons8_wednesday_16.png" />
+    <None Include="Resources\icons8_track_order_16.png" />
+    <None Include="Resources\icons8_timer_16.png" />
+    <None Include="Resources\icons8_adjust_16.png" />
+    <None Include="Resources\icons8_battery_16.png" />
+    <None Include="Resources\icons8_full_trash_16.png" />
+    <None Include="Resources\menemeni-1.jpg" />
+    <None Include="Resources\info_321.png" />
+    <None Include="Resources\icons8_camera_enhance_321.png" />
+    <None Include="Resources\info_32.png" />
+    <None Include="Resources\icons8_camera_enhance_32.png" />
+    <None Include="Resources\icons8_waste_sorting_16.png" />
+    <None Include="Resources\icons8_camera_enhance_16.png" />
+    <None Include="Resources\icons8_address_162.png" />
+    <None Include="Resources\icons8_redo_32.png" />
+    <None Include="Resources\icons8_undo_32.png" />
+    <None Include="Resources\icons8_map_pinpoint_32.png" />
+    <None Include="Resources\icons8_dashboard_16.png" />
+    <None Include="Resources\icons8_waste_p5_16.png" />
+    <None Include="Resources\icons8_waste_p1_16.png" />
+    <None Include="Resources\icons8_waste_m3_32.png" />
+    <None Include="Resources\icons8_wall_mount_camera_32.png" />
+    <None Include="Resources\icons8_cmd2_32.png" />
+    <None Include="Resources\icons8_cmd_321.png" />
+    <None Include="Resources\icons8_cmd_32.png" />
+    <None Include="Resources\icons8_user_32.png" />
+    <None Include="Resources\icons8_map_marker_32.png" />
+    <None Include="Resources\icons8_department2_16.png" />
+    <None Include="Resources\icons8_more_info_32.png" />
+    <None Include="Resources\icons8_user_account_32.png" />
+    <None Include="Resources\icons8_schedule2_16.png" />
+    <None Include="Resources\icons8_schedule_16.png" />
+    <None Include="Resources\icons8_hashtag_large2_16.png" />
+    <None Include="Resources\icons8_comedy_161.png" />
+    <None Include="Resources\icons8_comedy_16.png" />
+    <None Include="Resources\icons8_ok2_32.png" />
+    <None Include="Resources\icons8_ok-Green_16.png" />
+    <None Include="Resources\icons8_error_16.png" />
+    <None Include="Resources\icons8_error_48.png" />
+    <None Include="Resources\icons8_error_32.png" />
+    <None Include="Resources\icons8_user_engagement_male_32.png" />
+    <None Include="Resources\icons8_key2_32.png" />
+    <None Include="Resources\icons8_sign_out_323.png" />
+    <None Include="Resources\icons8_sign_out_322.png" />
+    <None Include="Resources\account_100px.png" />
+    <None Include="Resources\icons8_indiana_jones_16.png" />
+    <None Include="Resources\icons8_comedy_32.png" />
+    <None Include="Resources\icons8_add_user_group_man_man_16.png" />
+    <None Include="Resources\icons8_user_groups_32.png" />
+    <None Include="Resources\icons8_worker_16.png" />
+    <None Include="Resources\icons8_workers_322.png" />
+    <None Include="Resources\icons8_add_administrator_162.png" />
+    <None Include="Resources\icons8_add_administrator_161.png" />
+    <None Include="Resources\icons8_add_administrator_16.png" />
+    <None Include="Resources\icons8_hashtag_large_163.png" />
+    <None Include="Resources\icons8_businessman_16.png" />
+    <None Include="Resources\icons8_save_322.png" />
+    <None Include="Resources\icons8_identification_documents_164.png" />
+    <None Include="Resources\icons8_identification_documents2_164.png" />
+    <None Include="Resources\icons8_identification_documents_163.png" />
+    <None Include="Resources\icons8_identification_documents2_163.png" />
+    <None Include="Resources\icons8_workers2_32.png" />
+    <None Include="Resources\icons8_workers_321.png" />
+    <None Include="Resources\icons8_workers_32.png" />
+    <None Include="Resources\icons8_next_page_32.png" />
+    <None Include="Resources\icons8_back_to_32.png" />
+    <None Include="Resources\icons8_time_machine2_161.png" />
+    <None Include="Resources\icons8_time_machine2_16.png" />
+    <None Include="Resources\icons8_time_machine_16.png" />
+    <None Include="Resources\icons8_journey_321.png" />
+    <None Include="Resources\icons8_garbage_truck2_32.png" />
+    <None Include="Resources\icons8_jeep_162.png" />
+    <None Include="Resources\icons8_licence_plate_162.png" />
+    <None Include="Resources\icons8_identification_documents2_162.png" />
+    <None Include="Resources\icons8_address_161.png" />
+    <None Include="Resources\icons8_calendar_161.png" />
+    <None Include="Resources\icons8_address2_16.png" />
+    <None Include="Resources\icons8_journey_16.png" />
+    <None Include="Resources\icons8_unlock_16.png" />
+    <None Include="Resources\icons8_username_16.png" />
+    <None Include="Resources\icons8_enter_32.png" />
+    <None Include="Resources\icons8_sign_out_321.png" />
+    <None Include="Resources\icons8_cancel_324.png" />
+    <None Include="Resources\user_engagement_male_500px.png" />
+    <None Include="Resources\icons8_sign_out_32.png" />
+    <None Include="Resources\icons8_gas_station_161.png" />
+    <None Include="Resources\icons8_garbage_truck3_32.png" />
+    <None Include="Resources\icons8_hashtag_large_162.png" />
+    <None Include="Resources\icons8_garbage_truck3_16.png" />
+    <None Include="Resources\icons8_calendar_16.png" />
+    <None Include="Resources\icons8_jeep_161.png" />
+    <None Include="Resources\icons8_licence_plate_161.png" />
+    <None Include="Resources\icons8_gas_station_16.png" />
+    <None Include="Resources\icons8_hashtag_large_161.png" />
+    <None Include="Resources\icons8_garbage_truck2_16.png" />
+    <None Include="Resources\icons8_garbage_truck_161.png" />
+    <None Include="Resources\icons8_jeep_16.png" />
+    <None Include="Resources\icons8_licence_plate_16.png" />
+    <None Include="Resources\icons8_save_321.png" />
+    <None Include="Resources\icons8_cancel_323.png" />
+    <None Include="Resources\icons8_minus_32.png" />
+    <None Include="Resources\icons8_add_32.png" />
+    <None Include="Resources\icons8_europe2_161.png" />
+    <None Include="Resources\icons8_telephone2_16.png" />
+    <None Include="Resources\icons8_touchscreen_16.png" />
+    <None Include="Resources\icons8_phone_16.png" />
+    <None Include="Resources\icons8_europe2_16.png" />
+    <None Include="Resources\icons8_home_address_16.png" />
+    <None Include="Resources\icons8_home_address2_16.png" />
+    <None Include="Resources\icons8_company_161.png" />
+    <None Include="Resources\icons8_address_16.png" />
+    <None Include="Resources\icons8_company_16.png" />
+    <None Include="Resources\icons8_europe_16.png" />
+    <None Include="Resources\icons8_zip_code_16.png" />
+    <None Include="Resources\icons8_speaker_notes_16.png" />
+    <None Include="Resources\icons8_administrator_male_16.png" />
+    <None Include="Resources\icons8_hashtag_large_16.png" />
+    <None Include="Resources\icons8_email_161.png" />
+    <None Include="Resources\icons8_identification_documents_162.png" />
+    <None Include="Resources\icons8_identification_documents2_161.png" />
+    <None Include="Resources\icons8_phone2_32.png" />
+    <None Include="Resources\icons8_address_book_2_32.png" />
+    <None Include="Resources\icons8_gender_16.png" />
+    <None Include="Resources\icons8_email_16.png" />
+    <None Include="Resources\icons8_identification_documents2_16.png" />
+    <None Include="Resources\icons8_identification_documents_161.png" />
+    <None Include="Resources\icons8_cancel_322.png" />
+    <None Include="Resources\icons8_save_32.png" />
+    <None Include="Resources\icons8_identification_documents_16.png" />
+    <None Include="Resources\icons8_worker_32.png" />
+    <None Include="Resources\icons8_plus_321.png" />
+    <None Include="Resources\icons8_pencil_drawing_321.png" />
+    <None Include="Resources\icons8_cancel_321.png" />
+    <None Include="Resources\icons8_plus_32.png" />
+    <None Include="Resources\icons8_pencil_drawing_32.png" />
+    <None Include="Resources\icons8_cancel_32.png" />
+    <None Include="Resources\icons8_marker_16.png" />
+    <None Include="Resources\icons8_multiple_choice2_32.png" />
+    <None Include="Resources\icons8_single_choice_32.png" />
+    <None Include="Resources\icons8_journey_32.png" />
+    <None Include="Resources\icons8_garbage_truck_16.png" />
+    <None Include="Resources\icons8_garbage_truck_32.png" />
+    <None Include="Resources\icons8_user_16.png" />
+    <None Include="Resources\icons8_user_group_32.png" />
+    <None Include="Resources\graph_report_100px2.png" />
+    <None Include="Resources\increase_100px.png" />
+    <None Include="Resources\settings_100px2.png" />
+    <None Include="Resources\dashboard_100px.png" />
+    <None Include="Resources\staff_100px.png" />
+    <None Include="Resources\waste_100px2.png" />
+    <None Include="Resources\siren_100px2.png" />
+    <None Include="Resources\garbage_truck_100px2.png" />
+    <None Include="Resources\smoke_detector_100px.png" />
+    <None Include="Resources\worker_100px2.png" />
+    <None Include="Resources\journey_100px.png" />
+    <None Include="Resources\Settings.png" />
+    <None Include="Resources\Under_Construction.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\UserManagment.png" />
+    <None Include="Resources\Research.png" />
+    <None Include="Resources\Statistics.png" />
+    <None Include="Resources\Calc.png" />
+    <None Include="Resources\Rates.png" />
+    <None Include="Resources\Rotate.png" />
+    <None Include="Resources\actions.png" />
+    <None Include="Resources\reminders.png" />
+    <None Include="Resources\UserManagment-b.png" />
+    <None Include="Resources\technicians.png" />
+    <None Include="Resources\signal events.png" />
+    <Content Include="Assets\compost_black.svg" />
+    <Content Include="Assets\compost_orange.svg" />
+    <Content Include="Assets\geofence_black.svg" />
+    <Content Include="Assets\geofence_orange.svg" />
+    <Content Include="Assets\lock_black.svg" />
+    <Content Include="Assets\lock_orange.svg" />
+    <Content Include="Assets\recycle_black.svg" />
+    <Content Include="Assets\recycle_orange.svg" />
+    <Content Include="Assets\sphere_black.svg" />
+    <Content Include="Assets\sphere_orange.svg" />
+    <Content Include="Assets\waste_black.svg" />
+    <Content Include="Assets\waste_orange.svg" />
+    <Content Include="icons8_recycle_bin.ico" />
+    <Content Include="Images\actions.png" />
+    <Content Include="Images\Calc.png" />
+    <Content Include="Images\Home.png" />
+    <Content Include="Images\Rates.png" />
+    <Content Include="Images\reminders.png" />
+    <Content Include="Images\Research.png" />
+    <Content Include="Images\Rotate.png" />
+    <Content Include="Images\signal events.png" />
+    <None Include="Images\signalevents1.png" />
+    <Content Include="Images\Statistics.png" />
+    <Content Include="Images\svgs\geofence_black.svg" />
+    <Content Include="Images\svgs\geofence_orange.svg" />
+    <Content Include="Images\System.png" />
+    <Content Include="Images\technicians.png" />
+    <Content Include="Images\Under_Construction.png" />
+    <Content Include="Images\UserManagment-b.png" />
+    <Content Include="Images\UserManagment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\FlyOuts\AddEditUserDepartment\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\adme360.models\adme360.models.csproj">
+      <Project>{7826C3AE-0845-48BB-9C8F-F0BB6A46F325}</Project>
+      <Name>adme360.models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\adme360.presenter\adme360.presenter.csproj">
+      <Project>{8D4D3C89-0264-4D42-B54A-0343BD3BEFD2}</Project>
+      <Name>adme360.presenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\adme360.view\adme360.view.csproj">
+      <Project>{5AB8313A-C6C5-4480-A983-A70A2FD84D16}</Project>
+      <Name>adme360.view</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

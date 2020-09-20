@@ -46,8 +46,6 @@ src/cms/adme360-cms.model/obj/
 
 src/cms/adme360-cms.model/bin/
 
-packages/
-
 src/UI/adme360.models/obj/
 
 src/UI/adme360.view/bin/
@@ -57,3 +55,7 @@ src/UI/adme360.view/obj/
 src/UI/adme360.presenter/bin/
 
 src/UI/adme360.presenter/obj/
+
+src/UI/adme360.suite.ui/bin/
+
+src/UI/adme360.suite.ui/obj/

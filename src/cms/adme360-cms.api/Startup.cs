@@ -54,23 +54,6 @@ namespace adme360.cms.api
         options.MinimumSameSitePolicy = SameSiteMode.None;
       });
 
-      var name = Assembly.GetExecutingAssembly().GetName();
-
-      Log.Logger = new LoggerConfiguration()
-        .ReadFrom.Configuration(Configuration)
-        .MinimumLevel.Debug()
-        .MinimumLevel.Override("adme360-cms.api", LogEventLevel.Information)
-        .Enrich.FromLogContext()
-        .Enrich.WithMachineName()
-        .Enrich.WithProperty("Assembly", $"{name.Name}")
-        .Enrich.WithProperty("Revision", $"{name.Version}")
-        .WriteTo.Debug(
-          outputTemplate:
-          "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} {NewLine}{HttpContext} {NewLine}{Exception}")
-        .WriteTo.RollingFile(HostEnv.WebRootPath + "//" + $"{DateTime.Now}.txt", Serilog.Events.LogEventLevel.Information,
-          retainedFileCountLimit: 7)
-        .CreateLogger();
-
       services.AddLogging(loggingBuilder =>
         loggingBuilder
           .AddSerilog(dispose: true));

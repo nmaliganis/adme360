@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:6200",
+      "applicationUrl": "http://localhost:7200",
       "sslPort": 0
     }
   },
@@ -20,8 +20,7 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
-      "environmentVariables": {}
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger"
     },
     "magic.button.cms.api": {
       "commandName": "Project",

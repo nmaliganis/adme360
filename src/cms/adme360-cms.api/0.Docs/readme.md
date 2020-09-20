@@ -23,3 +23,44 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN1QGFkbWUuY29tIiwicm9sZSI6WyJ
   "customerUserPassword": "123456q!",
   "customerCategoryId": "e229b799-8cef-4e76-bf4e-4c196d505572"
 }
+
+{
+  "customerFirstname": "Costas",
+  "customerLastname": "Hatzakos",
+  "customerBrand": "MEVGAL S.A.",
+  "customerEmail": "info@mevgal.com",
+  "customerPhone": "+306974898442",
+  "customerVat": "EL22345678",
+  "customerWebsite": "www.mevgal.com",
+  "customerNotes": "Mevgal to be advertised",
+  "customerStreetOne": "Chlois 5",
+  "customerStreetTwo": "",
+  "customerPostCode": "15126",
+  "customerCity": "Marousi",
+  "customerRegion": "Attiki",
+  "customerUserLogin": "info@mevgal.com",
+  "customerUserPassword": "123456q!",
+  "customerCategoryId": "1229b799-8cef-4e76-bf4e-4c196d505572"
+}
+
+{
+  "customerFirstname": "Giorgos",
+  "customerLastname": "Dodonis",
+  "customerBrand": "DODONI S.A.",
+  "customerEmail": "info@dodoni.com",
+  "customerPhone": "+306974898452",
+  "customerVat": "EL22385678",
+  "customerWebsite": "www.dodoni.com",
+  "customerNotes": "Dodoni to be advertised",
+  "customerStreetOne": "Chlois 7",
+  "customerStreetTwo": "",
+  "customerPostCode": "15126",
+  "customerCity": "Marousi",
+  "customerRegion": "Attiki",
+  "customerUserLogin": "info@dodoni.com",
+  "customerUserPassword": "123456q!",
+  "customerCategoryId": "1229b799-8cef-4e76-bf4e-4c196d505572"
+}
+
+mevgal
+bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImluZm9AbWV2Z2FsLmNvbSIsInJvbGUiOlsiQURNSU4iLCJVU0VSIl0sIm5iZiI6MTYwMDYxNjcyMywiZXhwIjoxNjAwODMyNzIzLCJpYXQiOjE2MDA2MTY3MjMsImlzcyI6ImFnaWxlLWFlZ2lzLWx0ZCIsImF1ZCI6ImFkbWUzNjAtYXV0aC5hcGkifQ.m3i5f1C7QyumbzUoSbbBUUGsmB2Z_3RWLfk0QqKSZOk

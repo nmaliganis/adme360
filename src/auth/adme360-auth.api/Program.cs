@@ -24,7 +24,7 @@ namespace adme360.auth.api
     public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
         WebHost.CreateDefaultBuilder(args)
             .UseStartup<Startup>()
-            .UseUrls(urls: "http://0.0.0.0:6100")
+            .UseUrls(urls: "http://0.0.0.0:7100")
             .UseSerilog((provider, context, loggerConfiguration) =>
             {
               var name = Assembly.GetExecutingAssembly().GetName();
